@@ -1,0 +1,22 @@
+## Branch Structure
+feature branch -> staging branch -> live branch (main)
+
+staging branch and live branch will only have merge commits
+feature branch will have individual progress commits
+
+Both Staging Branch and Live Branch would have protected ruleset
+
+## Commits
+
+Commit frequently and small commits
+Small working pieces of code as checkpoint
+- can be Work in Progress but best to note WIP in commit message
+
+# Commit Message
+
+Present Tense Action Verb folowed by sentence representing the general idea of commit (limited to 50 characters)
+ie. Add 30 Character Limit to Login Form
+Multiline commits are very useful
+
+
+Consistent, well-documentated, for others to read
