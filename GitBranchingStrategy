@@ -1,3 +1,6 @@
+ALWAYS BE PULLING
+git pull origin <branch-name>
+
 ## Branch Structure
 feature branch -> staging branch (staging) -> live branch (main)
 
@@ -25,3 +28,5 @@ Consistent, well-documentated, for others to read
 
 PascalCase for feature branches
 ie. RegistrationTestCase
+
+ALWAYS BE PULLING
