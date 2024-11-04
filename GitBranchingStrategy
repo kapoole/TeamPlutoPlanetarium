@@ -1,5 +1,5 @@
 ## Branch Structure
-feature branch -> staging branch -> live branch (main)
+feature branch -> staging branch (staging) -> live branch (main)
 
 staging branch and live branch will only have merge commits
 feature branch will have individual progress commits
@@ -20,3 +20,8 @@ Multiline commits are very useful
 
 
 Consistent, well-documentated, for others to read
+
+# Branch Naming Conventions
+
+PascalCase for feature branches
+ie. RegistrationTestCase
