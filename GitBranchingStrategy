@@ -4,19 +4,22 @@ feature branch -> main branch
 main branch will only have merge commits
 feature branch will have individual progress commits
 
-main branch has Protected Ruleset in Github
+main branch has Protected ruleset
 
 ### Daily Scrum Notes
 DailyScrumRecordings branch -> main branch
 
-This is a branch to add Daily Scrum Notes for each day
-Pull Requests for each day is ideal
-Whenever switching to this branch, remember to git pull origin main to update this branch and prevent merge conflicts
+contains notes from each Daily Scrum
+
+* git pull origin main on this branch before adding new notes
 
 ### Git Branching Strategy
 GitBranchingStrategy branch -> main branch
 
-This is a branch to update the rules to follow to maintain git structure so that the overall project is consistent.
+contains modifications to GitBranchingStrategy.md
+for updateing the rules to follow to maintain git structure so that the overall project is consistent
+
+* git pull origin main on this branch before updating git branching strategy documents
 
 ## Commits
 
