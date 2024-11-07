@@ -1,10 +1,22 @@
 ## Branch Structure
-feature branch -> staging branch -> live branch (main)
+feature branch -> main branch
 
-staging branch and live branch will only have merge commits
+main branch will only have merge commits
 feature branch will have individual progress commits
 
-Both Staging Branch and Live Branch would have protected ruleset
+main branch has Protected Ruleset in Github
+
+### Daily Scrum Notes
+DailyScrumRecordings branch -> main branch
+
+This is a branch to add Daily Scrum Notes for each day
+Pull Requests for each day is ideal
+Whenever switching to this branch, remember to git pull origin main to update this branch and prevent merge conflicts
+
+### Git Branching Strategy
+GitBranchingStrategy branch -> main branch
+
+This is a branch to update the rules to follow to maintain git structure so that the overall project is consistent.
 
 ## Commits
 
