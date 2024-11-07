@@ -4,8 +4,9 @@ feature branch -> main branch
 main branch will only have merge commits
 feature branch will have individual progress commits
 
-main Branch has Protected ruleset
-### Daily Scrum Recordings
+main branch has Protected ruleset
+
+### Daily Scrum Notes
 DailyScrumRecordings branch -> main branch
 
 contains notes from each Daily Scrum
@@ -16,6 +17,7 @@ contains notes from each Daily Scrum
 GitBranchingStrategy branch -> main branch
 
 contains modifications to GitBranchingStrategy.md
+for updateing the rules to follow to maintain git structure so that the overall project is consistent
 
 * git pull origin main on this branch before updating git branching strategy documents
 
