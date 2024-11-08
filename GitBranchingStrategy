@@ -1,3 +1,6 @@
+ALWAYS BE PULLING
+git pull origin <branch-name>
+
 ## Branch Structure
 feature branch -> main branch
 
@@ -35,3 +38,10 @@ Multiline commits are very useful
 
 
 Consistent, well-documentated, for others to read
+
+# Branch Naming Conventions
+
+PascalCase for feature branches
+ie. RegistrationTestCase
+
+ALWAYS BE PULLING
