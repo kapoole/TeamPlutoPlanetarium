@@ -1,7 +1,7 @@
 Feature: DeletePlanet
 
     Scenario: Automated Delete Planet Test Case
-    Validating that Planets can be deleted by users no matter if the Planets have any orbiting Moons or not.
+    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.
 
         Given the User is on the "<Home Page>"
         When the User enter "<Planet Name>"
