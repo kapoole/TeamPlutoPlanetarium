@@ -3,9 +3,8 @@ Feature: DeletePlanet
     Scenario: Automated Delete Planet Test Case
     Validating that Planets can be deleted by users no matter if the Planets have any orbiting Moons or not.
 
-        Given the User is on the <Home Page>
-        And the User enter  <planet name>
-        When clicks Delete Button
-        And the User see <alert message >
-        When the user verify <planet own by User or not  own by User> in the list
-        Then the User redirects to <Home Page>
+        Given the User is on the "<Home Page>"
+        When the User enter "<Planet Name>"
+        And clicks Delete Button
+        Then the User should see alert "<Add Planet Result>"
+        And the User should  "<Delete Planet Redirect>"
