@@ -1,6 +1,6 @@
 Feature: AddMoons
 
-    Scenario: Automated Add Moon Test Case
+    Scenario Outline: Automated Add Moon Test Case
     Validating that Users can add moons to the Planetarium given that the Moon name does not already exists
     in the Planetarium database, that the Orbiting Planet ID does exist in the Planetarium database, that the
     User adding this moons is also the owner of the Orbiting Planet, that the Moon name does not exceed 30 characters,
@@ -13,3 +13,5 @@ Feature: AddMoons
         And clicks the Submit Moon Button
         Then the User should see an Alert saying "<Add Moon Result>"
         And should <stay> on the "<Home Page>"
+
+    Examples:
