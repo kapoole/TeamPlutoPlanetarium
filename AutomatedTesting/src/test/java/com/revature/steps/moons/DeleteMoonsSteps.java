@@ -83,19 +83,22 @@ public class DeleteMoonsSteps {
 
     @Then("the User should see {string} and {string}")
     public void theUserShouldSeeAnd(String deleteMoonResult, String expectedMessage) {
-        try{
-            if(deleteMoonResult.equals("Moon Deleted")){
-                Boolean isMoonVisible = TestRunner.homePage.isMoonVisible(expectedMessage);
-                Assert.assertEquals(false, isMoonVisible);
-            } else if (deleteMoonResult.equals("Alert")) {
-                Assert.assertEquals("Failed to delete moon with name ", alertMessage);
-            } else{
-                Assert.fail("Incorrect delete moon result produced: " + alertMessage );
+        if (deleteMoonResult.equals("Moon Deleted")) {
+            Boolean isMoonVisible = TestRunner.homePage.isMoonVisible(expectedMessage);
+            Assert.assertEquals(false, isMoonVisible);
+        } else if (deleteMoonResult.equals("Alert")) {
+            TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = TestRunner.driver.switchTo().alert();
+            String alertMessage = alert.getText();
+
+            try {
+                Assert.assertEquals(expectedMessage, alertMessage);
+            } finally {
+                alert.accept();
+                TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
             }
-        } finally{
-            alert.accept();
-            // here we tell the driver to wait up to 2 seconds for the alert to be gone before continuing
-            TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
+        } else {
+            Assert.fail("Incorrect delete moon result produced: " + deleteMoonResult);
         }
     }
 }

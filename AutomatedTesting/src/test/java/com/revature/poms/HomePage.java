@@ -1,5 +1,6 @@
 package com.revature.poms;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,6 +45,16 @@ public class HomePage {
     public void selectMoon() {
         Select select = new Select(locationaSelect);
         select.selectByValue("moon");
+    }
+
+    public boolean isMoonVisible(String moonName) {
+
+        boolean isFound = false;
+
+        System.out.println(celestialTable.toString());
+
+        return isFound;
+
     }
 
 

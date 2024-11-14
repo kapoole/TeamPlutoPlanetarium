@@ -9,7 +9,7 @@ Feature: DeleteMoons
         When the User selects Moon from the Dropdown
         And inputs "TesterMoon"
         And clicks Delete Button
-        Then the User should see "Alert" and "Moon Not Created"
+        Then the User should see "Alert" and "Failed to delete moon with name TesterMoon"
         And should "User stays on Home Page"
 
 
