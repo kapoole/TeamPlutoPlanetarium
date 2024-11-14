@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-14T15:09:58.559Z",
-        "line": 3,
+        "start_timestamp": "2024-11-14T15:18:11.566Z",
+        "line": 13,
         "name": "Automated Delete Moon Test Case",
-        "description": "    Validating that Users can delete Moons from the Planetarium given that the inputted Moon name exists\n    in the database and that the User owns the Planet that the given Moon is orbiting.",
-        "id": "deletemoons;automated-delete-moon-test-case",
+        "description": "",
+        "id": "deletemoons;automated-delete-moon-test-case;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4643495400,
+              "duration": 5452968800,
               "status": "passed"
             },
-            "line": 8,
+            "line": 4,
             "name": "the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"",
             "match": {
               "arguments": [
@@ -39,10 +39,10 @@
           },
           {
             "result": {
-              "duration": 1235049600,
+              "duration": 1427011300,
               "status": "passed"
             },
-            "line": 9,
+            "line": 5,
             "name": "the User selects Moon from the Dropdown",
             "match": {
               "location": "com.revature.steps.moons.DeleteMoonsSteps.the_User_selects_from_the_Dropdown()"
@@ -51,10 +51,10 @@
           },
           {
             "result": {
-              "duration": 693677100,
+              "duration": 2308190500,
               "status": "passed"
             },
-            "line": 10,
+            "line": 6,
             "name": "inputs \"TesterMoon\"",
             "match": {
               "arguments": [
@@ -69,10 +69,10 @@
           },
           {
             "result": {
-              "duration": 1331327200,
+              "duration": 1454763800,
               "status": "passed"
             },
-            "line": 11,
+            "line": 7,
             "name": "clicks Delete Button",
             "match": {
               "location": "com.revature.steps.moons.DeleteMoonsSteps.clicks_Delete_Button()"
@@ -81,12 +81,12 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Moon Not Created]\u003e but was:\u003c[Failed to delete moon with name ]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(DeleteMoonsSteps.java:95)\r\n\tat ✽.the User should see \"Alert\" and \"Moon Not Created\"(classpath:features/DeleteMoons.feature:12)\r\n",
-              "duration": 244802700,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...lete moon with name [TesterMoon]\u003e but was:\u003c...lete moon with name []\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(DeleteMoonsSteps.java:95)\r\n\tat ✽.the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"(classpath:features/DeleteMoons.feature:8)\r\n",
+              "duration": 643539500,
               "status": "failed"
             },
-            "line": 12,
-            "name": "the User should see \"Alert\" and \"Moon Not Created\"",
+            "line": 8,
+            "name": "the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"",
             "match": {
               "arguments": [
                 {
@@ -94,7 +94,7 @@
                   "offset": 20
                 },
                 {
-                  "val": "\"Moon Not Created\"",
+                  "val": "\"Failed to delete moon with name TesterMoon\"",
                   "offset": 32
                 }
               ],
@@ -104,9 +104,369 @@
           },
           {
             "result": {
+              "duration": 2003800,
               "status": "skipped"
             },
-            "line": 13,
+            "line": 9,
+            "name": "should \"User stays on Home Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User stays on Home Page\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-14T15:18:23.713Z",
+        "line": 14,
+        "name": "Automated Delete Moon Test Case",
+        "description": "",
+        "id": "deletemoons;automated-delete-moon-test-case;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7454044600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/planetarium\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Batman\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"I am the night\"",
+                  "offset": 85
+                }
+              ],
+              "location": "com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2587858300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the User selects Moon from the Dropdown",
+            "match": {
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.the_User_selects_from_the_Dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3023478900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "inputs \"Luna\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Luna\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 517098100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks Delete Button",
+            "match": {
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.clicks_Delete_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253778300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the User should see \"Moon Deleted\" and \"M/A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Moon Deleted\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"M/A\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77829900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "should \"User stays on Home Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User stays on Home Page\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-14T15:18:37.833Z",
+        "line": 18,
+        "name": "Automated Delete Moon Test Case",
+        "description": "",
+        "id": "deletemoons;automated-delete-moon-test-case;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4864325600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/planetarium\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Batman\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"I am the night\"",
+                  "offset": 85
+                }
+              ],
+              "location": "com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2045316700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the User selects Moon from the Dropdown",
+            "match": {
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.the_User_selects_from_the_Dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2147756400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "inputs \"TesterMoon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TesterMoon\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 770279700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks Delete Button",
+            "match": {
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.clicks_Delete_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...lete moon with name [TesterMoon]\u003e but was:\u003c...lete moon with name []\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(DeleteMoonsSteps.java:95)\r\n\tat ✽.the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"(classpath:features/DeleteMoons.feature:8)\r\n",
+              "duration": 364849500,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alert\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Failed to delete moon with name TesterMoon\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1997800,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "should \"User stays on Home Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User stays on Home Page\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-14T15:18:48.206Z",
+        "line": 19,
+        "name": "Automated Delete Moon Test Case",
+        "description": "",
+        "id": "deletemoons;automated-delete-moon-test-case;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3488424700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/planetarium\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Batman\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"I am the night\"",
+                  "offset": 85
+                }
+              ],
+              "location": "com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1681636700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the User selects Moon from the Dropdown",
+            "match": {
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.the_User_selects_from_the_Dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1555614300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "inputs \"Luna\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Luna\"",
+                  "offset": 7
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 289706000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks Delete Button",
+            "match": {
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.clicks_Delete_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Failed to delete moon with name }\n  (Session info: chrome\u003d130.0.6723.117): Failed to delete moon with name \nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [326a8f8f90d27d64992cca033608bbe4, findElement {value\u003dcelestialTable, using\u003did}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54065/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 326a8f8f90d27d64992cca033608bbe4\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy15.toString(Unknown Source)\r\n\tat com.revature.poms.HomePage.isMoonVisible(HomePage.java:54)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(DeleteMoonsSteps.java:87)\r\n\tat ✽.the User should see \"Moon Deleted\" and \"M/A\"(classpath:features/DeleteMoons.feature:8)\r\n",
+              "duration": 288768500,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "the User should see \"Moon Deleted\" and \"M/A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Moon Deleted\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"M/A\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1006700,
+              "status": "skipped"
+            },
+            "line": 9,
             "name": "should \"User stays on Home Page\"",
             "match": {
               "arguments": [
@@ -133,7 +493,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-14T15:10:07.324Z",
+        "start_timestamp": "2024-11-14T15:18:55.924Z",
         "line": 15,
         "name": "Automated User Registration Unique Username Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a valid password and a unique username, and if the username is not unique their account should not be created",
@@ -143,7 +503,7 @@
         "steps": [
           {
             "result": {
-              "duration": 357746400,
+              "duration": 400326000,
               "status": "passed"
             },
             "line": 5,
@@ -161,7 +521,7 @@
           },
           {
             "result": {
-              "duration": 1371355400,
+              "duration": 830665400,
               "status": "passed"
             },
             "line": 6,
@@ -173,7 +533,7 @@
           },
           {
             "result": {
-              "duration": 2325825800,
+              "duration": 597409500,
               "status": "passed"
             },
             "line": 7,
@@ -191,7 +551,7 @@
           },
           {
             "result": {
-              "duration": 2000475400,
+              "duration": 1178487300,
               "status": "passed"
             },
             "line": 8,
@@ -209,7 +569,7 @@
           },
           {
             "result": {
-              "duration": 1603338500,
+              "duration": 398235200,
               "status": "passed"
             },
             "line": 9,
@@ -222,7 +582,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...ith username \"Robin\"[]\u003e but was:\u003c...ith username \"Robin\"[ and password \"BatmanAndRobinToTheRescue20202\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.then(RegistrationSteps.java:36)\r\n\tat ✽.Then an alert should appear saying \"User created\" for \"Robin\"(classpath:features/RegistrationUniqueUsername.feature:10)\r\n",
-              "duration": 144590200,
+              "duration": 623078100,
               "status": "failed"
             },
             "line": 10,
@@ -244,7 +604,7 @@
           },
           {
             "result": {
-              "duration": 1000900,
+              "duration": 999800,
               "status": "skipped"
             },
             "line": 11,
@@ -263,7 +623,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-14T15:10:15.293Z",
+        "start_timestamp": "2024-11-14T15:19:00.099Z",
         "line": 16,
         "name": "Automated User Registration Unique Username Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a valid password and a unique username, and if the username is not unique their account should not be created",
@@ -273,7 +633,7 @@
         "steps": [
           {
             "result": {
-              "duration": 465284100,
+              "duration": 199543900,
               "status": "passed"
             },
             "line": 5,
@@ -291,7 +651,7 @@
           },
           {
             "result": {
-              "duration": 662251900,
+              "duration": 679446300,
               "status": "passed"
             },
             "line": 6,
@@ -303,7 +663,7 @@
           },
           {
             "result": {
-              "duration": 2246702600,
+              "duration": 866105400,
               "status": "passed"
             },
             "line": 7,
@@ -321,7 +681,7 @@
           },
           {
             "result": {
-              "duration": 2857139000,
+              "duration": 1342271100,
               "status": "passed"
             },
             "line": 8,
@@ -339,7 +699,7 @@
           },
           {
             "result": {
-              "duration": 1582828100,
+              "duration": 658196000,
               "status": "passed"
             },
             "line": 9,
@@ -352,7 +712,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...th username \"Batman\"[]\u003e but was:\u003c...th username \"Batman\"[ and password \"BatmanAndRobinToTheRescue20202\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.then(RegistrationSteps.java:38)\r\n\tat ✽.Then an alert should appear saying \"User not created\" for \"Batman\"(classpath:features/RegistrationUniqueUsername.feature:10)\r\n",
-              "duration": 772645500,
+              "duration": 178446700,
               "status": "failed"
             },
             "line": 10,
@@ -374,7 +734,7 @@
           },
           {
             "result": {
-              "duration": 996000,
+              "duration": 1000400,
               "status": "skipped"
             },
             "line": 11,
@@ -404,7 +764,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-14T15:10:24.040Z",
+        "start_timestamp": "2024-11-14T15:19:04.187Z",
         "line": 9,
         "name": "Automated View Moons Test Case",
         "description": "",
@@ -414,7 +774,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3753581900,
+              "duration": 3297878500,
               "status": "passed"
             },
             "line": 4,
@@ -440,8 +800,9 @@
           },
           {
             "result": {
-              "duration": 745414200,
-              "status": "passed"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[2] Moons\u003e but was:\u003c[1] Moons\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.the_User_should_see(ViewMoonsSteps.java:25)\r\n\tat ✽.the User should see \"2 Moons\"(classpath:features/ViewMoons.feature:5)\r\n",
+              "duration": 1131734600,
+              "status": "failed"
             },
             "line": 5,
             "name": "the User should see \"2 Moons\"",
@@ -459,7 +820,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-14T15:10:28.691Z",
+        "start_timestamp": "2024-11-14T15:19:08.768Z",
         "line": 10,
         "name": "Automated View Moons Test Case",
         "description": "",
@@ -469,7 +830,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4086521000,
+              "duration": 3614194800,
               "status": "passed"
             },
             "line": 4,
@@ -495,8 +856,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[0] Moons\u003e but was:\u003c[2] Moons\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.the_User_should_see(ViewMoonsSteps.java:25)\r\n\tat ✽.the User should see \"0 Moons\"(classpath:features/ViewMoons.feature:5)\r\n",
-              "duration": 585514800,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[0] Moons\u003e but was:\u003c[1] Moons\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.the_User_should_see(ViewMoonsSteps.java:25)\r\n\tat ✽.the User should see \"0 Moons\"(classpath:features/ViewMoons.feature:5)\r\n",
+              "duration": 433917600,
               "status": "failed"
             },
             "line": 5,
