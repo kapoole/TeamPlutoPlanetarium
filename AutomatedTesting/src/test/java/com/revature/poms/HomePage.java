@@ -13,6 +13,10 @@ public class HomePage {
 
     private WebDriver driver;
 
+    // Locator for Logout Button
+    @FindBy(id = "logout-button") // Make sure to use the correct locator here
+    private WebElement logoutButton;
+
     @FindBy(id = "locationSelect")
     private WebElement locationaSelect;
 
@@ -46,6 +50,11 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
+    // Method to click the Logout button
+    public void clickLogoutButton() {
+        logoutButton.click();
+    }
+  
     public void enterMoonNameToBeDeleted(String moonName) { deleteInput.sendKeys(moonName); }
 
     public void enterMoonNameToBeAdded(String moonName ) { addMoonNameInput.sendKeys(moonName); }
@@ -80,3 +89,4 @@ public class HomePage {
 
 
 }
+
