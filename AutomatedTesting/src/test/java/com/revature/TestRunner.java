@@ -1,5 +1,6 @@
 package com.revature;
 
+import com.revature.poms.HomePage;
 import com.revature.poms.LoginPage;
 import com.revature.poms.RegistrationPage;
 import com.revature.poms.HomePage; // Add HomePage import
@@ -31,6 +32,7 @@ public class TestRunner {
     public static LoginPage loginPage;
     public static RegistrationPage registrationPage;
     public static HomePage homePage; // Declare HomePage object for logout functionality
+
 
     // Setup method to initialize WebDriver and page objects
     @BeforeClass

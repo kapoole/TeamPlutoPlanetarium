@@ -13,6 +13,9 @@ public class HomePage {
 
     private WebDriver driver;
 
+
+    @FindBy(id = "planetNameInput")
+    private WebElement planetNameInput;
     // Locator for Logout Button
     @FindBy(id = "logout-button") // Make sure to use the correct locator here
     private WebElement logoutButton;
@@ -44,10 +47,24 @@ public class HomePage {
 
     @FindBy(xpath = "//table[@id='celestialTable']//td[contains(text(), 'moon')]")
     private List<WebElement> moons;
-
+  
     public HomePage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public void clickLocationSelect(){
+        locationSelect.click();
+    }
+    public void enterPlanetName(String PlanetName) { planetNameInput.sendKeys(PlanetName); }
+
+    public void clickSubmitButton(){
+        submitButton.click();
+    }
+
+    public void selectPlanet() {
+        Select select = new Select(locationSelect);
+        select.selectByValue("Planet");
     }
 
     // Method to click the Logout button

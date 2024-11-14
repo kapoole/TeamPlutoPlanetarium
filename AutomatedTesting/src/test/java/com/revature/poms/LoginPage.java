@@ -24,7 +24,6 @@ public class LoginPage {
     @FindBy(tagName = "a")
     private WebElement registrationButton;
 
-    
     @FindBy(id = "usernameInput")
     private WebElement usernameInput;
 
@@ -74,3 +73,4 @@ public class LoginPage {
     }
 
 }
+
