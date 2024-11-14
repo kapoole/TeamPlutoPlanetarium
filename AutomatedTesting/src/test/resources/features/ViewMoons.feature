@@ -1,7 +1,10 @@
 Feature: ViewMoons
 
-    Scenario: Automated View Moons Test Case
-    Validating that Users can view Moons that orbit Planets which the User owns on the Home Page in a list.
-        #Given the User is on the "<Home Page>"
-        Given the User is logged in and on the "http://localhost:8080/planetarium"
-        Then the User should see "<Moons Owned By Planets the User Owns>"
+    Scenario Outline: Automated View Moons Test Case
+        Given the User is logged in and on the <url> as <username> and <password>
+        Then the User should see <string>
+
+        Examples:
+            | url                                 | username | password           | string    |
+            | "http://localhost:8080/planetarium" | "Batman" | "I am the night"   | "2 Moons" |
+            | "http://localhost:8080/planetarium" | "Robin"  | "BatmanAndRobinToTheRescue20202" | "0 Moons" |

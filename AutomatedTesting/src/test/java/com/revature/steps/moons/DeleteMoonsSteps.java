@@ -18,20 +18,11 @@ public class DeleteMoonsSteps {
 //        TestRunner.driver.get(url);
 //    }
 
-    @When("the User selects {string} from the Dropdown")
-    public void the_User_selects_from_the_Dropdown(String string) {
+    @When("the User selects Moon from the Dropdown")
+    public void the_User_selects_from_the_Dropdown() {
         TestRunner.homePage.selectMoon();
     }
 
-
-
-//    @Given("the User is on the <Home Page>\"")
-//    public void the_User_is_on_the_Home_Page() {
-//        // Write code here that turns the phrase above into concrete actions
-//        throw new io.cucumber.java.PendingException();
-//    }
-//
-//
     @When("inputs {string}")
     public void inputs(String moonName) {
         TestRunner.homePage.enterMoonNameToBeDeleted(moonName);
@@ -87,6 +78,24 @@ public class DeleteMoonsSteps {
             Assert.assertEquals("Home", TestRunner.driver.getTitle());
         } else {
             Assert.assertEquals("Home", TestRunner.driver.getTitle());
+        }
+    }
+
+    @Then("the User should see {string} and {string}")
+    public void theUserShouldSeeAnd(String deleteMoonResult, String expectedMessage) {
+        try{
+            if(deleteMoonResult.equals("Moon Deleted")){
+                Boolean isMoonVisible = TestRunner.homePage.isMoonVisible(expectedMessage);
+                Assert.assertEquals(false, isMoonVisible);
+            } else if (deleteMoonResult.equals("Alert")) {
+                Assert.assertEquals("Failed to delete moon with name ", alertMessage);
+            } else{
+                Assert.fail("Incorrect delete moon result produced: " + alertMessage );
+            }
+        } finally{
+            alert.accept();
+            // here we tell the driver to wait up to 2 seconds for the alert to be gone before continuing
+            TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
         }
     }
 }
