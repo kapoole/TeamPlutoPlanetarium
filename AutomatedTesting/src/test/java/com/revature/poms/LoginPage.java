@@ -12,6 +12,15 @@ public class LoginPage {
     @FindBy(tagName = "a")
     private WebElement registrationButton;
 
+    @FindBy(id = "usernameInput")
+    private WebElement usernameInput;
+
+    @FindBy(id = "passwordInput")
+    private WebElement passwordInput;
+
+    @FindBy(xpath = "//form[@id='loginForm']/input[@type='submit']")
+    private WebElement loginButton;
+
     public LoginPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -21,4 +30,12 @@ public class LoginPage {
         registrationButton.click();
     }
 
+    public void login(String username, String password){
+        driver.get("http://localhost:8080/");
+        usernameInput.sendKeys(username);
+        passwordInput.sendKeys(password);
+        loginButton.click();
+    }
+
 }
+

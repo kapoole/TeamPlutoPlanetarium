@@ -1,5 +1,6 @@
 package com.revature;
 
+import com.revature.poms.HomePage;
 import com.revature.poms.LoginPage;
 import com.revature.poms.RegistrationPage;
 import com.revature.utility.Setup;
@@ -30,6 +31,8 @@ public class TestRunner {
 
     public static RegistrationPage registrationPage;
 
+    public static HomePage homePage;
+
     @BeforeClass
     public static void setup(){
         driver = new ChromeDriver();
@@ -37,6 +40,7 @@ public class TestRunner {
         alertWait = new WebDriverWait(driver, Duration.ofSeconds(2));
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);
+        homePage = new HomePage(driver);
     }
 
     @AfterClass
