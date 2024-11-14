@@ -22,6 +22,19 @@ public class HomePage {
     @FindBy(id = "deleteButton")
     private WebElement deleteButton;
 
+    @FindBy(id = "moonNameInput")
+    private WebElement addMoonNameInput;
+
+    @FindBy(className = "submitButton")
+    private WebElement addMoonSubmitButton;
+
+    @FindBy(id = "orbitedPlanetInput")
+    private WebElement addMoonOrbitedPlanetInput;
+
+    @FindBy(id = "moonImageInput")
+    private WebElement addMoonImageInput;
+
+
     @FindBy(id = "celestialTable")
     private WebElement celestialTable;
 
@@ -34,6 +47,14 @@ public class HomePage {
     }
 
     public void enterMoonNameToBeDeleted(String moonName) { deleteInput.sendKeys(moonName); }
+
+    public void enterMoonNameToBeAdded(String moonName ) { addMoonNameInput.sendKeys(moonName); }
+
+    public void enterOrbitedPlanetID(String orbitedPlanetID) { addMoonOrbitedPlanetInput.sendKeys(orbitedPlanetID); }
+
+    public void enterImage(String imageFile) { addMoonImageInput.sendKeys("src/test/resources/Celestial-Images/moon-3.jpg"); }
+
+    public void submitAddMoonForm() { addMoonSubmitButton.click(); }
 
     public void clickDeleteButton() { deleteButton.click(); }
 

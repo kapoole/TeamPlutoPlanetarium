@@ -12,11 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class DeleteMoonsSteps {
 
-//    @Given("the User is logged in and on the {string}")
-//    public void the_User_is_logged_in_and_on_the(String url) {
-//        TestRunner.loginPage.login("Batman", "I am the night");
-//        TestRunner.driver.get(url);
-//    }
+
 
     @When("the User selects Moon from the Dropdown")
     public void the_User_selects_from_the_Dropdown() {
@@ -32,18 +28,6 @@ public class DeleteMoonsSteps {
     public void clicks_Delete_Button() {
         TestRunner.homePage.clickDeleteButton();
     }
-//
-//    @Then("should <Stay> on the {string}")
-//    public void should_Stay_on_the(String string) {
-//        // Write code here that turns the phrase above into concrete actions
-//        throw new io.cucumber.java.PendingException();
-//    }
-//
-//    @Then("should <stay> on the {string}")
-//    public void should_stay_on_the(String string) {
-//        // Write code here that turns the phrase above into concrete actions
-//        throw new io.cucumber.java.PendingException();
-//    }
 
     @Then("the User should see an Alert saying {string}")
     public void the_User_should_see_an_Alert_saying(String message) {
@@ -98,7 +82,7 @@ public class DeleteMoonsSteps {
                 TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
             }
         } else {
-            Assert.fail("Incorrect delete moon result produced: " + deleteMoonResult);
+            Assert.fail("Incorrect add moon result produced: " + deleteMoonResult);
         }
     }
 }
