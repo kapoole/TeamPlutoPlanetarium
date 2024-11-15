@@ -14,12 +14,6 @@ public class DeletePlanet {
         TestRunner.homePage.enterPlanetName(PlanetName);
     }
 
-    @When("clicks Delete Button")
-    public void clicks_Delete_Button() {
-        // Write code here that turns the phrase above into concrete actions
-        TestRunner.homePage.clickDeleteButton();
-    }
-
     @Then("the User should see delete planet alert  {string}")
     public void the_User_should_see__delete_planet_alert (String message) {
         // Write code here that turns the phrase above into concrete actions

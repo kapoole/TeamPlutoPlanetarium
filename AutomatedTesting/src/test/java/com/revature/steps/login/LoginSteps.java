@@ -9,13 +9,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginSteps {
 
-    @When("The user enters the username {string}")
-    public void the_user_enters_the_username(String username) {
+    @When("The user enters the login username {string}")
+    public void the_user_enters_the_login_username(String username) {
         TestRunner.loginPage.enterUsername(username);
     }
 
-    @When("The user enters the password {string}")
-    public void the_user_enters_the_password(String password) {
+    @When("The user enters the login password {string}")
+    public void the_user_enters_the_login_password(String password) {
         TestRunner.loginPage.enterPassword(password);
     }
 
@@ -46,11 +46,5 @@ public class LoginSteps {
         }
     }
 
-    @Then("The user should redirect to {string}")
-    public void the_user_should_redirect_to(String expectedPageTitle) {
-        String actualTitle = TestRunner.driver.getTitle();
 
-        // Validate the page title to confirm redirection
-        Assert.assertEquals(expectedPageTitle, actualTitle);
-    }
 }
