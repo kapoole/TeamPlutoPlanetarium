@@ -21,7 +21,7 @@ public class HomePage {
     private WebElement logoutButton;
 
     @FindBy(id = "locationSelect")
-    private WebElement locationaSelect;
+    private WebElement locationSelect;
 
     @FindBy(id = "deleteInput")
     private WebElement deleteInput;
@@ -34,6 +34,9 @@ public class HomePage {
 
     @FindBy(className = "submitButton")
     private WebElement addMoonSubmitButton;
+
+    @FindBy(className = "submitButton")
+    private WebElement addPlanetSubmitButton;
 
     @FindBy(id = "orbitedPlanetInput")
     private WebElement addMoonOrbitedPlanetInput;
@@ -59,7 +62,7 @@ public class HomePage {
     public void enterPlanetName(String PlanetName) { planetNameInput.sendKeys(PlanetName); }
 
     public void clickSubmitButton(){
-        submitButton.click();
+        addPlanetSubmitButton.click();
     }
 
     public void selectPlanet() {
@@ -90,7 +93,7 @@ public class HomePage {
     }
 
     public void selectMoon() {
-        Select select = new Select(locationaSelect);
+        Select select = new Select(locationSelect);
         select.selectByValue("moon");
     }
 

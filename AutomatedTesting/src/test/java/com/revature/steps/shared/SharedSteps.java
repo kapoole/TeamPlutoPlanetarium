@@ -4,6 +4,7 @@ import com.revature.TestRunner;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class SharedSteps {
 
@@ -36,5 +37,13 @@ public class SharedSteps {
     @When("The user clicks the logout button")
     public void the_user_clicks_the_logout_button() {
         TestRunner.homePage.clickLogoutButton(); // Use HomePage to click logout
+    }
+
+    @Then("The user should redirect to {string}")
+    public void the_user_should_redirect_to(String expectedPageTitle) {
+        String actualTitle = TestRunner.driver.getTitle();
+
+        // Validate the page title to confirm redirection
+        Assert.assertEquals(expectedPageTitle, actualTitle);
     }
 }

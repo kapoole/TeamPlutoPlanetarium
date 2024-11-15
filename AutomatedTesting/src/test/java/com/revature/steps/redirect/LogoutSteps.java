@@ -1,4 +1,4 @@
-package com.revature.steps.logout;
+package com.revature.steps.redirect;
 
 import com.revature.TestRunner;
 import io.cucumber.java.en.Then;
@@ -15,11 +15,4 @@ public class LogoutSteps {
         TestRunner.driver.findElement(By.id("logout-button")).click();
     }
 
-    // Step to verify redirection to the login page
-    @Then("The user should redirect to {string}")
-    public void the_user_should_redirect_to(String loginPageUrl) {
-        // Validate the URL or title of the page to confirm redirection
-        String currentUrl = TestRunner.driver.getCurrentUrl();
-        Assert.assertEquals("User is not redirected to the login page", loginPageUrl, currentUrl);
-    }
 }

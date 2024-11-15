@@ -10,16 +10,6 @@ public class LoginPage {
     // Instance of WebDriver
     private WebDriver driver;
 
-    // Web element locators for login functionality
-    @FindBy(id = "username") // Replace 'id' with the actual attribute in your HTML
-    private WebElement usernameInput;
-
-    @FindBy(id = "password") // Replace 'id' with the actual attribute in your HTML
-    private WebElement passwordInput;
-
-    @FindBy(id = "login-button") // Replace 'id' with the actual attribute in your HTML
-    private WebElement loginButton;
-
     // Existing registration button locator
     @FindBy(tagName = "a")
     private WebElement registrationButton;
