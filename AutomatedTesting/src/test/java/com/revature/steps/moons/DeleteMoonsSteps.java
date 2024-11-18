@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class DeleteMoonsSteps {
@@ -31,6 +32,7 @@ public class DeleteMoonsSteps {
 
     @Then("the User should see an Alert saying {string}")
     public void the_User_should_see_an_Alert_saying(String message) {
+
         TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
         Alert alert = TestRunner.driver.switchTo().alert();
         String alertMessage = alert.getText();
@@ -67,22 +69,28 @@ public class DeleteMoonsSteps {
 
     @Then("the User should see {string} and {string}")
     public void theUserShouldSeeAnd(String deleteMoonResult, String expectedMessage) {
-        if (deleteMoonResult.equals("Moon Deleted")) {
-            Boolean isMoonVisible = TestRunner.homePage.isMoonVisible(expectedMessage);
-            Assert.assertEquals(false, isMoonVisible);
-        } else if (deleteMoonResult.equals("Alert")) {
+        try {
             TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
             Alert alert = TestRunner.driver.switchTo().alert();
             String alertMessage = alert.getText();
 
-            try {
+            alert.accept();
+
+            if (deleteMoonResult.equals("Moon Deleted")) {
+                Assert.fail("Alert but no Alert was expected");
+            }  else if (deleteMoonResult.equals("Alert")) {
                 Assert.assertEquals(expectedMessage, alertMessage);
-            } finally {
-                alert.accept();
-                TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
             }
-        } else {
-            Assert.fail("Incorrect add moon result produced: " + deleteMoonResult);
+
+        } catch (TimeoutException te) {
+            if (deleteMoonResult.equals("Moon Deleted")) {
+                Boolean isMoonVisible = TestRunner.homePage.isMoonVisible(expectedMessage);
+                Assert.assertEquals(false, isMoonVisible);
+            } else if (deleteMoonResult.equals("Alert")) {
+                Assert.fail("No Alert but Alert was expected");
+            } else{
+                Assert.fail("No Alert failure");
+            }
         }
     }
 }

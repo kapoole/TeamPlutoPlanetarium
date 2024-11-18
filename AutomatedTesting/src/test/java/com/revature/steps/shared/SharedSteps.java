@@ -6,7 +6,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.sql.SQLException;
+
 public class SharedSteps {
+
 
     // Starting step for login page (unchanged)
     @Given("The user is on the login page at url {string}")
