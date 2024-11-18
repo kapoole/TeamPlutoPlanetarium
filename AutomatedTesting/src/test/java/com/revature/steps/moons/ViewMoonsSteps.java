@@ -16,7 +16,7 @@ public class ViewMoonsSteps {
     @Given("the User is logged in and on the {string} as {string} and {string}")
     public void theUserIsLoggedInAndOnTheAsAnd(String url, String username, String password) {
         TestRunner.loginPage.login(username, password);
-        TestRunner.driver.get(url);
+        TestRunner.driver.navigate().to(url);
     }
 
 

@@ -23,7 +23,7 @@ public class SharedSteps {
     @Given("the User is on the {string}")
     public void the_User_is_on_the(String url) {
         // Write code here that turns the phrase above into concrete actions
-        TestRunner.loginPage.login("IamRobin", "Iwillsavetheworld");
+        TestRunner.loginPage.login("Batman", "I am the night");
         TestRunner.driver.get(url);
     }
 
