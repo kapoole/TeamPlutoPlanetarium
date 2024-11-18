@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ViewMoonsSteps {
@@ -15,8 +16,12 @@ public class ViewMoonsSteps {
 
     @Given("the User is logged in and on the {string} as {string} and {string}")
     public void theUserIsLoggedInAndOnTheAsAnd(String url, String username, String password) {
-        TestRunner.loginPage.login(username, password);
-        TestRunner.driver.navigate().to(url);
+        try{
+            TestRunner.loginPage.login(username, password);
+            TestRunner.driver.navigate().to(url);
+        } catch(UnhandledAlertException uae){
+            Assert.fail("Unexpectaed Failed login: Username [" + username + "] and Password [" + password + "] not accepted");
+        }
     }
 
 
