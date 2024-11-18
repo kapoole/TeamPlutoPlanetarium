@@ -53,8 +53,10 @@ public class TestRunner {
     // Tear down method to close the WebDriver after tests
     @AfterClass
     public static void tearDown() {
+        System.out.println("TEARING DOWN...");
         if (driver != null) {
             driver.quit(); // Close the browser after tests
+            System.out.println("Closed driver!!!!!!!");
         }
         Setup.main(new String[]{}); // Run the Setup utility (if applicable)
     }
