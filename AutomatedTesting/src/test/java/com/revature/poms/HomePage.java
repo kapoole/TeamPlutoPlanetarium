@@ -20,8 +20,11 @@ public class HomePage {
     @FindBy(id = "logout-button") // Make sure to use the correct locator here
     private WebElement logoutButton;
 
+//    @FindBy(id = "locationSelect")
+//    private WebElement locationSelect;
+
     @FindBy(id = "locationSelect")
-    private WebElement locationSelect;
+    private Select locationSelect;
 
     @FindBy(id = "deleteInput")
     private WebElement deleteInput;
@@ -56,9 +59,7 @@ public class HomePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void clickLocationSelect(){
-        locationSelect.click();
-    }
+
     public void enterPlanetName(String PlanetName) { planetNameInput.sendKeys(PlanetName); }
 
     public void clickSubmitButton(){
@@ -66,9 +67,11 @@ public class HomePage {
     }
 
     public void selectPlanet() {
-        Select select = new Select(locationSelect);
-        select.selectByValue("Planet");
+        locationSelect  = new Select(driver.findElement(By.id("locationSelect")));
+        locationSelect.selectByValue("planet");
     }
+
+
 
     // Method to click the Logout button
     public void clickLogoutButton() {
@@ -93,8 +96,8 @@ public class HomePage {
     }
 
     public void selectMoon() {
-        Select select = new Select(locationSelect);
-        select.selectByValue("moon");
+        locationSelect  = new Select(driver.findElement(By.id("locationSelect")));
+        locationSelect.selectByValue("moon");
     }
 
     public boolean isMoonVisible(String moonName) {
