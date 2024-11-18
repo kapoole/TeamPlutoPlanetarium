@@ -9,10 +9,15 @@ import org.openqa.selenium.By;
 public class LogoutSteps {
 
     // Step to click the Logout Button
-    @When("The user clicks the Logout Button")
-    public void the_user_clicks_the_logout_button() {
-        // Click the logout button, assuming the button has a specific id (you might need to adjust this locator)
+    @When("the User clicks the Logout Button")
+    public void the_User_clicks_the_Logout_Button() {
+        // Click the logout button
         TestRunner.driver.findElement(By.id("logout-button")).click();
+    }
+
+    @Then("the User should redirect to http:\\/\\/localhost:{int}\\/")
+    public void the_User_should_redirect(String url) {
+        TestRunner.driver.get(url);
     }
 
 }
