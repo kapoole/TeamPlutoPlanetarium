@@ -15,8 +15,9 @@ public class HomePage {
 
     @FindBy(id = "planetNameInput")
     private WebElement planetNameInput;
+
     // Locator for Logout Button
-    @FindBy(id = "logout-button") // Make sure to use the correct locator here
+    @FindBy(id = "logoutButton") // Make sure to use the correct locator here
     private WebElement logoutButton;
 
     @FindBy(id = "locationSelect")
