@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T14:31:57.816Z",
+        "start_timestamp": "2024-11-20T14:51:37.080Z",
         "line": 13,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6385054300,
+              "duration": 7762294600,
               "status": "passed"
             },
             "line": 4,
@@ -39,9 +39,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#locationSelect\"}\n  (Session info: chrome\u003d131.0.6778.69)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [10410c78c92aabf286af2803a496b0f1, findElement {using\u003did, value\u003dlocationSelect}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59891/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 10410c78c92aabf286af2803a496b0f1\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy15.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:43)\r\n\tat com.revature.poms.HomePage.selectMoon(HomePage.java:93)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.the_User_selects_from_the_Dropdown(DeleteMoonsSteps.java:20)\r\n\tat ✽.the User selects Moon from the Dropdown(classpath:features/DeleteMoons.feature:5)\r\n",
-              "duration": 2234667300,
-              "status": "failed"
+              "duration": 1514367100,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User selects Moon from the Dropdown",
@@ -52,8 +51,8 @@
           },
           {
             "result": {
-              "duration": 2587200,
-              "status": "skipped"
+              "duration": 1767585200,
+              "status": "passed"
             },
             "line": 6,
             "name": "inputs \"TesterMoon\"",
@@ -70,8 +69,8 @@
           },
           {
             "result": {
-              "duration": 1003700,
-              "status": "skipped"
+              "duration": 750089700,
+              "status": "passed"
             },
             "line": 7,
             "name": "clicks Delete Button",
@@ -82,8 +81,9 @@
           },
           {
             "result": {
-              "duration": 933200,
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...lete moon with name [TesterMoon]\u003e but was:\u003c...lete moon with name []\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(DeleteMoonsSteps.java:54)\r\n\tat ✽.the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"(classpath:features/DeleteMoons.feature:8)\r\n",
+              "duration": 187752300,
+              "status": "failed"
             },
             "line": 8,
             "name": "the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"",
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 1000700,
+              "duration": 2011400,
               "status": "skipped"
             },
             "line": 9,
@@ -123,7 +123,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:07.826Z",
+        "start_timestamp": "2024-11-20T14:51:49.815Z",
         "line": 14,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -133,7 +133,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7434218100,
+              "duration": 5340228000,
               "status": "passed"
             },
             "line": 4,
@@ -159,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 1129822600,
+              "duration": 1919203200,
               "status": "passed"
             },
             "line": 5,
@@ -171,7 +171,7 @@
           },
           {
             "result": {
-              "duration": 1846150000,
+              "duration": 1227959900,
               "status": "passed"
             },
             "line": 6,
@@ -189,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 587972000,
+              "duration": 390802700,
               "status": "passed"
             },
             "line": 7,
@@ -201,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 2271170800,
+              "duration": 2230536100,
               "status": "passed"
             },
             "line": 8,
@@ -223,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 23172900,
+              "duration": 24848900,
               "status": "passed"
             },
             "line": 9,
@@ -242,7 +242,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:21.243Z",
+        "start_timestamp": "2024-11-20T14:52:01.051Z",
         "line": 18,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -253,7 +253,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Unexpectaed Failed login: Username [IamRobin] and Password [I am the night] not accepted\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:23)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"IamRobin\" and \"I am the night\"(classpath:features/DeleteMoons.feature:4)\r\n",
-              "duration": 1478160500,
+              "duration": 2265916400,
               "status": "failed"
             },
             "line": 4,
@@ -279,6 +279,7 @@
           },
           {
             "result": {
+              "duration": 2998200,
               "status": "skipped"
             },
             "line": 5,
@@ -290,6 +291,7 @@
           },
           {
             "result": {
+              "duration": 1002300,
               "status": "skipped"
             },
             "line": 6,
@@ -307,7 +309,7 @@
           },
           {
             "result": {
-              "duration": 6588500,
+              "duration": 17217900,
               "status": "skipped"
             },
             "line": 7,
@@ -319,6 +321,7 @@
           },
           {
             "result": {
+              "duration": 1000100,
               "status": "skipped"
             },
             "line": 8,
@@ -340,7 +343,6 @@
           },
           {
             "result": {
-              "duration": 934500,
               "status": "skipped"
             },
             "line": 9,
@@ -359,7 +361,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:22.850Z",
+        "start_timestamp": "2024-11-20T14:52:03.534Z",
         "line": 19,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -369,7 +371,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1542929700,
+              "duration": 2120807100,
               "status": "passed"
             },
             "line": 4,
@@ -395,7 +397,7 @@
           },
           {
             "result": {
-              "duration": 1123478600,
+              "duration": 743872100,
               "status": "passed"
             },
             "line": 5,
@@ -407,7 +409,7 @@
           },
           {
             "result": {
-              "duration": 1072893100,
+              "duration": 316273200,
               "status": "passed"
             },
             "line": 6,
@@ -425,7 +427,7 @@
           },
           {
             "result": {
-              "duration": 1079408800,
+              "duration": 791673500,
               "status": "passed"
             },
             "line": 7,
@@ -437,7 +439,7 @@
           },
           {
             "result": {
-              "duration": 2144715900,
+              "duration": 2140531300,
               "status": "passed"
             },
             "line": 8,
@@ -459,7 +461,7 @@
           },
           {
             "result": {
-              "duration": 35738600,
+              "duration": 22863000,
               "status": "passed"
             },
             "line": 9,
@@ -489,7 +491,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T14:32:29.925Z",
+        "start_timestamp": "2024-11-20T14:52:09.740Z",
         "line": 17,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -499,7 +501,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2419951000,
+              "duration": 1763838700,
               "status": "passed"
             },
             "line": 6,
@@ -525,7 +527,7 @@
           },
           {
             "result": {
-              "duration": 1105829000,
+              "duration": 862082400,
               "status": "passed"
             },
             "line": 7,
@@ -537,7 +539,7 @@
           },
           {
             "result": {
-              "duration": 646029200,
+              "duration": 879881700,
               "status": "passed"
             },
             "line": 8,
@@ -555,7 +557,7 @@
           },
           {
             "result": {
-              "duration": 1108952000,
+              "duration": 237854600,
               "status": "passed"
             },
             "line": 9,
@@ -568,7 +570,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 101496800,
+              "duration": 67670700,
               "status": "failed"
             },
             "line": 10,
@@ -608,7 +610,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:35.491Z",
+        "start_timestamp": "2024-11-20T14:52:13.626Z",
         "line": 18,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -618,7 +620,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2493027100,
+              "duration": 1592243500,
               "status": "passed"
             },
             "line": 6,
@@ -644,7 +646,7 @@
           },
           {
             "result": {
-              "duration": 1123346400,
+              "duration": 558452100,
               "status": "passed"
             },
             "line": 7,
@@ -656,7 +658,7 @@
           },
           {
             "result": {
-              "duration": 525730600,
+              "duration": 289901000,
               "status": "passed"
             },
             "line": 8,
@@ -674,7 +676,7 @@
           },
           {
             "result": {
-              "duration": 521974800,
+              "duration": 528319300,
               "status": "passed"
             },
             "line": 9,
@@ -687,7 +689,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cFailed to delete [Planet with name Venus]\u003e but was:\u003cFailed to delete [planet with name ]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:69)\r\n\tat ✽.the User should see Delete Planet Result of \"Alert\" and \"Failed to delete Planet with name Venus\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 248237800,
+              "duration": 44403400,
               "status": "failed"
             },
             "line": 10,
@@ -709,7 +711,6 @@
           },
           {
             "result": {
-              "duration": 990300,
               "status": "skipped"
             },
             "line": 11,
@@ -728,7 +729,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:40.470Z",
+        "start_timestamp": "2024-11-20T14:52:16.686Z",
         "line": 23,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -738,7 +739,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1640341300,
+              "duration": 1163176500,
               "status": "passed"
             },
             "line": 6,
@@ -764,7 +765,7 @@
           },
           {
             "result": {
-              "duration": 626703300,
+              "duration": 580713800,
               "status": "passed"
             },
             "line": 7,
@@ -776,7 +777,7 @@
           },
           {
             "result": {
-              "duration": 403734400,
+              "duration": 340613600,
               "status": "passed"
             },
             "line": 8,
@@ -794,7 +795,7 @@
           },
           {
             "result": {
-              "duration": 808021800,
+              "duration": 729896500,
               "status": "passed"
             },
             "line": 9,
@@ -807,7 +808,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 55175100,
+              "duration": 64725900,
               "status": "failed"
             },
             "line": 10,
@@ -829,6 +830,7 @@
           },
           {
             "result": {
+              "duration": 527500,
               "status": "skipped"
             },
             "line": 11,
@@ -847,7 +849,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:44.087Z",
+        "start_timestamp": "2024-11-20T14:52:19.628Z",
         "line": 24,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -857,7 +859,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1582494500,
+              "duration": 1402919800,
               "status": "passed"
             },
             "line": 6,
@@ -883,7 +885,7 @@
           },
           {
             "result": {
-              "duration": 733902900,
+              "duration": 541486300,
               "status": "passed"
             },
             "line": 7,
@@ -895,7 +897,7 @@
           },
           {
             "result": {
-              "duration": 409137300,
+              "duration": 805135000,
               "status": "passed"
             },
             "line": 8,
@@ -913,7 +915,7 @@
           },
           {
             "result": {
-              "duration": 809750900,
+              "duration": 324894100,
               "status": "passed"
             },
             "line": 9,
@@ -926,7 +928,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cFailed to delete [Planet with name Mercury]\u003e but was:\u003cFailed to delete [planet with name ]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:69)\r\n\tat ✽.the User should see Delete Planet Result of \"Alert\" and \"Failed to delete Planet with name Mercury\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 60457800,
+              "duration": 63168300,
               "status": "failed"
             },
             "line": 10,
@@ -948,7 +950,7 @@
           },
           {
             "result": {
-              "duration": 1024300,
+              "duration": 1029000,
               "status": "skipped"
             },
             "line": 11,
@@ -967,7 +969,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:47.760Z",
+        "start_timestamp": "2024-11-20T14:52:22.850Z",
         "line": 29,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -977,7 +979,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1269474700,
+              "duration": 1409867900,
               "status": "passed"
             },
             "line": 6,
@@ -1003,7 +1005,7 @@
           },
           {
             "result": {
-              "duration": 573742600,
+              "duration": 446547700,
               "status": "passed"
             },
             "line": 7,
@@ -1015,7 +1017,7 @@
           },
           {
             "result": {
-              "duration": 363923800,
+              "duration": 293812200,
               "status": "passed"
             },
             "line": 8,
@@ -1033,7 +1035,7 @@
           },
           {
             "result": {
-              "duration": 534125500,
+              "duration": 532223300,
               "status": "passed"
             },
             "line": 9,
@@ -1046,7 +1048,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 289844800,
+              "duration": 44087400,
               "status": "failed"
             },
             "line": 10,
@@ -1068,7 +1070,6 @@
           },
           {
             "result": {
-              "duration": 993700,
               "status": "skipped"
             },
             "line": 11,
@@ -1087,7 +1088,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:50.874Z",
+        "start_timestamp": "2024-11-20T14:52:25.620Z",
         "line": 30,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -1097,7 +1098,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1889980400,
+              "duration": 1534086100,
               "status": "passed"
             },
             "line": 6,
@@ -1123,7 +1124,7 @@
           },
           {
             "result": {
-              "duration": 768468000,
+              "duration": 634490200,
               "status": "passed"
             },
             "line": 7,
@@ -1135,7 +1136,7 @@
           },
           {
             "result": {
-              "duration": 391327900,
+              "duration": 320505300,
               "status": "passed"
             },
             "line": 8,
@@ -1153,7 +1154,7 @@
           },
           {
             "result": {
-              "duration": 1072608700,
+              "duration": 524853600,
               "status": "passed"
             },
             "line": 9,
@@ -1165,7 +1166,7 @@
           },
           {
             "result": {
-              "duration": 2183957300,
+              "duration": 2080231300,
               "status": "passed"
             },
             "line": 10,
@@ -1187,7 +1188,7 @@
           },
           {
             "result": {
-              "duration": 21815700,
+              "duration": 33740000,
               "status": "passed"
             },
             "line": 11,
@@ -1217,7 +1218,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T14:32:57.232Z",
+        "start_timestamp": "2024-11-20T14:52:30.786Z",
         "line": 14,
         "name": "Login with Existing Account Test Case",
         "description": "\tValidating that Users can access the Home Page of the Planetarium given that they enter a Username that exists in the database and the correct password associated with their account.",
@@ -1227,7 +1228,7 @@
         "steps": [
           {
             "result": {
-              "duration": 103755100,
+              "duration": 72624100,
               "status": "passed"
             },
             "line": 5,
@@ -1245,7 +1246,7 @@
           },
           {
             "result": {
-              "duration": 389736700,
+              "duration": 939126900,
               "status": "passed"
             },
             "line": 6,
@@ -1263,7 +1264,7 @@
           },
           {
             "result": {
-              "duration": 584694200,
+              "duration": 1593525000,
               "status": "passed"
             },
             "line": 7,
@@ -1281,7 +1282,7 @@
           },
           {
             "result": {
-              "duration": 384450900,
+              "duration": 283516000,
               "status": "passed"
             },
             "line": 8,
@@ -1293,7 +1294,7 @@
           },
           {
             "result": {
-              "duration": 82834000,
+              "duration": 61107200,
               "status": "passed"
             },
             "line": 9,
@@ -1315,7 +1316,7 @@
           },
           {
             "result": {
-              "duration": 33791400,
+              "duration": 66563000,
               "status": "passed"
             },
             "line": 10,
@@ -1334,7 +1335,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:32:58.863Z",
+        "start_timestamp": "2024-11-20T14:52:33.915Z",
         "line": 15,
         "name": "Login with Existing Account Test Case",
         "description": "\tValidating that Users can access the Home Page of the Planetarium given that they enter a Username that exists in the database and the correct password associated with their account.",
@@ -1344,7 +1345,7 @@
         "steps": [
           {
             "result": {
-              "duration": 305286200,
+              "duration": 189594900,
               "status": "passed"
             },
             "line": 5,
@@ -1362,7 +1363,7 @@
           },
           {
             "result": {
-              "duration": 483400700,
+              "duration": 595950500,
               "status": "passed"
             },
             "line": 6,
@@ -1380,7 +1381,7 @@
           },
           {
             "result": {
-              "duration": 544350100,
+              "duration": 664906500,
               "status": "passed"
             },
             "line": 7,
@@ -1398,7 +1399,7 @@
           },
           {
             "result": {
-              "duration": 271721900,
+              "duration": 440919600,
               "status": "passed"
             },
             "line": 8,
@@ -1410,7 +1411,7 @@
           },
           {
             "result": {
-              "duration": 3071799400,
+              "duration": 2382306200,
               "status": "passed"
             },
             "line": 9,
@@ -1432,7 +1433,7 @@
           },
           {
             "result": {
-              "duration": 161575700,
+              "duration": 31788200,
               "status": "passed"
             },
             "line": 10,
@@ -1462,7 +1463,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T14:33:03.764Z",
+        "start_timestamp": "2024-11-20T14:52:38.255Z",
         "line": 11,
         "name": "Logout with Existing Account Test Case",
         "description": "\tValidating that Users can use the Logout Button on the Home Page to logout and go back to the Login Page.",
@@ -1472,7 +1473,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2565214800,
+              "duration": 1708661600,
               "status": "passed"
             },
             "line": 5,
@@ -1498,7 +1499,7 @@
           },
           {
             "result": {
-              "duration": 1210992100,
+              "duration": 493580800,
               "status": "passed"
             },
             "line": 6,
@@ -1510,7 +1511,7 @@
           },
           {
             "result": {
-              "duration": 38085700,
+              "duration": 121061800,
               "status": "passed"
             },
             "line": 7,
@@ -1540,7 +1541,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T14:33:07.630Z",
+        "start_timestamp": "2024-11-20T14:52:40.613Z",
         "line": 12,
         "name": "Users should be redirected to the create account page from the login page",
         "description": "\tValidating the create account page is accessed properly from the login page",
@@ -1550,7 +1551,7 @@
         "steps": [
           {
             "result": {
-              "duration": 136258600,
+              "duration": 72659900,
               "status": "passed"
             },
             "line": 6,
@@ -1568,7 +1569,7 @@
           },
           {
             "result": {
-              "duration": 615549500,
+              "duration": 701124800,
               "status": "passed"
             },
             "line": 7,
@@ -1580,7 +1581,7 @@
           },
           {
             "result": {
-              "duration": 27754300,
+              "duration": 104360700,
               "status": "passed"
             },
             "line": 8,
@@ -1610,7 +1611,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T14:33:08.433Z",
+        "start_timestamp": "2024-11-20T14:52:41.514Z",
         "line": 14,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1620,7 +1621,7 @@
         "steps": [
           {
             "result": {
-              "duration": 106637000,
+              "duration": 102268100,
               "status": "passed"
             },
             "line": 5,
@@ -1638,7 +1639,7 @@
           },
           {
             "result": {
-              "duration": 208735800,
+              "duration": 211514300,
               "status": "passed"
             },
             "line": 6,
@@ -1656,7 +1657,7 @@
           },
           {
             "result": {
-              "duration": 226491900,
+              "duration": 292083100,
               "status": "passed"
             },
             "line": 7,
@@ -1674,7 +1675,7 @@
           },
           {
             "result": {
-              "duration": 285610600,
+              "duration": 348482100,
               "status": "passed"
             },
             "line": 8,
@@ -1687,7 +1688,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully with username] \"\"\u003e but was:\u003cAccount creat[ion failed with username \"\" and password] \"\"\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 58541100,
+              "duration": 50790900,
               "status": "failed"
             },
             "line": 9,
@@ -1723,7 +1724,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:09.360Z",
+        "start_timestamp": "2024-11-20T14:52:42.583Z",
         "line": 15,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1733,7 +1734,7 @@
         "steps": [
           {
             "result": {
-              "duration": 95764300,
+              "duration": 125261900,
               "status": "passed"
             },
             "line": 5,
@@ -1751,7 +1752,7 @@
           },
           {
             "result": {
-              "duration": 184706000,
+              "duration": 287951400,
               "status": "passed"
             },
             "line": 6,
@@ -1769,7 +1770,7 @@
           },
           {
             "result": {
-              "duration": 363002800,
+              "duration": 409867600,
               "status": "passed"
             },
             "line": 7,
@@ -1787,7 +1788,7 @@
           },
           {
             "result": {
-              "duration": 323736200,
+              "duration": 304716800,
               "status": "passed"
             },
             "line": 8,
@@ -1800,7 +1801,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully with username \"]\"\u003e but was:\u003cAccount creat[ion failed with username \"\" and password \"GordonIsMyHeroForeverGoodMan11]\"\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 71403400,
+              "duration": 51398100,
               "status": "failed"
             },
             "line": 9,
@@ -1818,7 +1819,6 @@
           },
           {
             "result": {
-              "duration": 988200,
               "status": "skipped"
             },
             "line": 10,
@@ -1837,7 +1837,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:10.450Z",
+        "start_timestamp": "2024-11-20T14:52:43.803Z",
         "line": 16,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1847,7 +1847,7 @@
         "steps": [
           {
             "result": {
-              "duration": 132250300,
+              "duration": 121776900,
               "status": "passed"
             },
             "line": 5,
@@ -1865,7 +1865,7 @@
           },
           {
             "result": {
-              "duration": 258476900,
+              "duration": 248065100,
               "status": "passed"
             },
             "line": 6,
@@ -1883,7 +1883,7 @@
           },
           {
             "result": {
-              "duration": 491951700,
+              "duration": 362142600,
               "status": "passed"
             },
             "line": 7,
@@ -1901,7 +1901,7 @@
           },
           {
             "result": {
-              "duration": 262306800,
+              "duration": 239989200,
               "status": "passed"
             },
             "line": 8,
@@ -1914,7 +1914,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...led with username \"\"[]\u003e but was:\u003c...led with username \"\"[ and password \"LexLuthorIsSchemingAgainOhNo!!!\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 51780300,
+              "duration": 47144200,
               "status": "failed"
             },
             "line": 9,
@@ -1950,7 +1950,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:11.683Z",
+        "start_timestamp": "2024-11-20T14:52:44.851Z",
         "line": 17,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1960,7 +1960,7 @@
         "steps": [
           {
             "result": {
-              "duration": 116048300,
+              "duration": 93389800,
               "status": "passed"
             },
             "line": 5,
@@ -1978,7 +1978,7 @@
           },
           {
             "result": {
-              "duration": 437290100,
+              "duration": 566219000,
               "status": "passed"
             },
             "line": 6,
@@ -1996,7 +1996,7 @@
           },
           {
             "result": {
-              "duration": 169728500,
+              "duration": 188138800,
               "status": "passed"
             },
             "line": 7,
@@ -2014,7 +2014,7 @@
           },
           {
             "result": {
-              "duration": 222234100,
+              "duration": 259754100,
               "status": "passed"
             },
             "line": 8,
@@ -2027,7 +2027,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully with username \"BatmanAndRobinToTheRescue20202]\"\u003e but was:\u003cAccount creat[ion failed with username \"BatmanAndRobinToTheRescue20202\" and password \"]\"\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"BatmanAndRobinToTheRescue20202\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 40917000,
+              "duration": 56246700,
               "status": "failed"
             },
             "line": 9,
@@ -2063,7 +2063,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:12.699Z",
+        "start_timestamp": "2024-11-20T14:52:46.065Z",
         "line": 18,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2073,7 +2073,7 @@
         "steps": [
           {
             "result": {
-              "duration": 83836500,
+              "duration": 78721300,
               "status": "passed"
             },
             "line": 5,
@@ -2091,7 +2091,7 @@
           },
           {
             "result": {
-              "duration": 537925300,
+              "duration": 605233100,
               "status": "passed"
             },
             "line": 6,
@@ -2109,7 +2109,7 @@
           },
           {
             "result": {
-              "duration": 352691600,
+              "duration": 554804400,
               "status": "passed"
             },
             "line": 7,
@@ -2127,7 +2127,7 @@
           },
           {
             "result": {
-              "duration": 234772100,
+              "duration": 349727300,
               "status": "passed"
             },
             "line": 8,
@@ -2140,7 +2140,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...binToTheRescue20202\"[]\u003e but was:\u003c...binToTheRescue20202\"[ and password \"GordonIsMyHeroForeverGoodMan11\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"BatmanAndRobinToTheRescue20202\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 559833500,
+              "duration": 557990700,
               "status": "failed"
             },
             "line": 9,
@@ -2158,6 +2158,7 @@
           },
           {
             "result": {
+              "duration": 999500,
               "status": "skipped"
             },
             "line": 10,
@@ -2176,7 +2177,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:14.491Z",
+        "start_timestamp": "2024-11-20T14:52:48.232Z",
         "line": 19,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2186,7 +2187,7 @@
         "steps": [
           {
             "result": {
-              "duration": 109029200,
+              "duration": 78103000,
               "status": "passed"
             },
             "line": 5,
@@ -2204,7 +2205,7 @@
           },
           {
             "result": {
-              "duration": 622909900,
+              "duration": 362130300,
               "status": "passed"
             },
             "line": 6,
@@ -2222,7 +2223,7 @@
           },
           {
             "result": {
-              "duration": 412161400,
+              "duration": 353760800,
               "status": "passed"
             },
             "line": 7,
@@ -2240,7 +2241,7 @@
           },
           {
             "result": {
-              "duration": 287797600,
+              "duration": 314034300,
               "status": "passed"
             },
             "line": 8,
@@ -2253,7 +2254,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...binToTheRescue20202\"[]\u003e but was:\u003c...binToTheRescue20202\"[ and password \"LexLuthorIsSchemingAgainOhNo!!!\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"BatmanAndRobinToTheRescue20202\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 46910800,
+              "duration": 76221300,
               "status": "failed"
             },
             "line": 9,
@@ -2289,7 +2290,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:16.006Z",
+        "start_timestamp": "2024-11-20T14:52:49.454Z",
         "line": 20,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2299,7 +2300,7 @@
         "steps": [
           {
             "result": {
-              "duration": 122117300,
+              "duration": 109104500,
               "status": "passed"
             },
             "line": 5,
@@ -2317,7 +2318,7 @@
           },
           {
             "result": {
-              "duration": 461962000,
+              "duration": 785570800,
               "status": "passed"
             },
             "line": 6,
@@ -2335,7 +2336,7 @@
           },
           {
             "result": {
-              "duration": 227497800,
+              "duration": 233687500,
               "status": "passed"
             },
             "line": 7,
@@ -2353,7 +2354,7 @@
           },
           {
             "result": {
-              "duration": 327387600,
+              "duration": 340099100,
               "status": "passed"
             },
             "line": 8,
@@ -2366,7 +2367,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...lerAreAtItAgain1010\"[]\u003e but was:\u003c...lerAreAtItAgain1010\"[ and password \"\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 46920500,
+              "duration": 78657700,
               "status": "failed"
             },
             "line": 9,
@@ -2384,7 +2385,6 @@
           },
           {
             "result": {
-              "duration": 998600,
               "status": "skipped"
             },
             "line": 10,
@@ -2403,7 +2403,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:17.223Z",
+        "start_timestamp": "2024-11-20T14:52:51.050Z",
         "line": 21,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2413,7 +2413,7 @@
         "steps": [
           {
             "result": {
-              "duration": 126080300,
+              "duration": 139440600,
               "status": "passed"
             },
             "line": 5,
@@ -2431,7 +2431,7 @@
           },
           {
             "result": {
-              "duration": 675086100,
+              "duration": 513094300,
               "status": "passed"
             },
             "line": 6,
@@ -2449,7 +2449,7 @@
           },
           {
             "result": {
-              "duration": 496310200,
+              "duration": 421408100,
               "status": "passed"
             },
             "line": 7,
@@ -2467,7 +2467,7 @@
           },
           {
             "result": {
-              "duration": 320814100,
+              "duration": 234382100,
               "status": "passed"
             },
             "line": 8,
@@ -2480,7 +2480,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...lerAreAtItAgain1010\"[]\u003e but was:\u003c...lerAreAtItAgain1010\"[ and password \"GordonIsMyHeroForeverGoodMan11\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 62782200,
+              "duration": 39266600,
               "status": "failed"
             },
             "line": 9,
@@ -2516,7 +2516,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:18.944Z",
+        "start_timestamp": "2024-11-20T14:52:52.422Z",
         "line": 22,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2526,7 +2526,7 @@
         "steps": [
           {
             "result": {
-              "duration": 120313200,
+              "duration": 84188500,
               "status": "passed"
             },
             "line": 5,
@@ -2544,7 +2544,7 @@
           },
           {
             "result": {
-              "duration": 515363600,
+              "duration": 489060300,
               "status": "passed"
             },
             "line": 6,
@@ -2562,7 +2562,7 @@
           },
           {
             "result": {
-              "duration": 405713400,
+              "duration": 363624200,
               "status": "passed"
             },
             "line": 7,
@@ -2580,7 +2580,7 @@
           },
           {
             "result": {
-              "duration": 229227500,
+              "duration": 232908100,
               "status": "passed"
             },
             "line": 8,
@@ -2593,7 +2593,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...lerAreAtItAgain1010\"[]\u003e but was:\u003c...lerAreAtItAgain1010\"[ and password \"LexLuthorIsSchemingAgainOhNo!!!\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
-              "duration": 35219800,
+              "duration": 36779800,
               "status": "failed"
             },
             "line": 9,
@@ -2640,7 +2640,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T14:33:20.391Z",
+        "start_timestamp": "2024-11-20T14:52:53.673Z",
         "line": 14,
         "name": "Automated User Registration Unique Username Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a valid password and a unique username, and if the username is not unique their account should not be created",
@@ -2650,7 +2650,7 @@
         "steps": [
           {
             "result": {
-              "duration": 80184400,
+              "duration": 118416100,
               "status": "passed"
             },
             "line": 5,
@@ -2668,38 +2668,69 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 463290900,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User enters unique Robin",
-            "match": {},
+            "name": "the User inputs Registration Username of \"Robin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Robin\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 531965900,
+              "status": "passed"
             },
             "line": 7,
-            "name": "the User enter valid BatmanAndRobinToTheRescue20202",
-            "match": {},
+            "name": "inputs Registration Password of \"BatmanAndRobinToTheRescue20202\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BatmanAndRobinToTheRescue20202\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 356656300,
+              "status": "passed"
             },
             "line": 8,
-            "name": "the User clicks on Create Account button",
-            "match": {},
+            "name": "clicks Create Account Button",
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...ully with username \"[]\"\u003e but was:\u003c...ully with username \"[Robin\" and password \"BatmanAndRobinToTheRescue20202]\"\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"(classpath:features/RegistrationUniqueUsername.feature:9)\r\n",
+              "duration": 569177100,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should be given alert \"User created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account created successfully with username \\\"\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
@@ -2707,22 +2738,22 @@
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"\u003cUser Creation Redirect\u003e\"",
+            "name": "The user should redirect to \"Planetarium Login\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"\u003cUser Creation Redirect\u003e\"",
-                  "offset": 7
+                  "val": "\"Planetarium Login\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:20.526Z",
+        "start_timestamp": "2024-11-20T14:52:55.749Z",
         "line": 15,
         "name": "Automated User Registration Unique Username Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a valid password and a unique username, and if the username is not unique their account should not be created",
@@ -2732,7 +2763,7 @@
         "steps": [
           {
             "result": {
-              "duration": 102324400,
+              "duration": 150691900,
               "status": "passed"
             },
             "line": 5,
@@ -2750,39 +2781,69 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 369770300,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User enters unique Batman",
-            "match": {},
+            "name": "the User inputs Registration Username of \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 996600,
-              "status": "skipped"
+              "duration": 428162200,
+              "status": "passed"
             },
             "line": 7,
-            "name": "the User enter valid BatmanAndRobinToTheRescue20202",
-            "match": {},
+            "name": "inputs Registration Password of \"BatmanAndRobinToTheRescue20202\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BatmanAndRobinToTheRescue20202\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 263721600,
+              "status": "passed"
             },
             "line": 8,
-            "name": "the User clicks on Create Account button",
-            "match": {},
+            "name": "clicks Create Account Button",
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully with username \"]\"\u003e but was:\u003cAccount creat[ion failed with username \"Batman\" and password \"BatmanAndRobinToTheRescue20202]\"\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"(classpath:features/RegistrationUniqueUsername.feature:9)\r\n",
+              "duration": 562798900,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should be given alert \"User not created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account created successfully with username \\\"\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
@@ -2790,15 +2851,15 @@
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"\u003cUser Creation Redirect\u003e\"",
+            "name": "The user should redirect to \"Planetarium Login\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"\u003cUser Creation Redirect\u003e\"",
-                  "offset": 7
+                  "val": "\"Planetarium Login\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
@@ -2816,7 +2877,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T14:33:20.659Z",
+        "start_timestamp": "2024-11-20T14:52:57.539Z",
         "line": 9,
         "name": "Automated View Moons Test Case",
         "description": "",
@@ -2826,7 +2887,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1145423600,
+              "duration": 1091920200,
               "status": "passed"
             },
             "line": 4,
@@ -2853,7 +2914,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c[2] Moons\u003e but was:\u003c[0] Moons\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.the_User_should_see(ViewMoonsSteps.java:31)\r\n\tat ✽.the User should see \"2 Moons\"(classpath:features/ViewMoons.feature:5)\r\n",
-              "duration": 4187602900,
+              "duration": 4068574600,
               "status": "failed"
             },
             "line": 5,
@@ -2872,7 +2933,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T14:33:26.013Z",
+        "start_timestamp": "2024-11-20T14:53:02.725Z",
         "line": 10,
         "name": "Automated View Moons Test Case",
         "description": "",
@@ -2882,9 +2943,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Unexpectaed Failed login: Username [Robin] and Password [BatmanAndRobinToTheRescue20202] not accepted\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:23)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Robin\" and \"BatmanAndRobinToTheRescue20202\"(classpath:features/ViewMoons.feature:4)\r\n",
-              "duration": 1110404400,
-              "status": "failed"
+              "duration": 1813363000,
+              "status": "passed"
             },
             "line": 4,
             "name": "the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Robin\" and \"BatmanAndRobinToTheRescue20202\"",
@@ -2909,7 +2969,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 4100116600,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User should see \"0 Moons\"",
