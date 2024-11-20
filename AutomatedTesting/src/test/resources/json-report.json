@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:44:28.412Z",
+        "start_timestamp": "2024-11-20T14:31:57.816Z",
         "line": 13,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4241580600,
+              "duration": 6385054300,
               "status": "passed"
             },
             "line": 4,
@@ -39,8 +39,9 @@
           },
           {
             "result": {
-              "duration": 1086030500,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#locationSelect\"}\n  (Session info: chrome\u003d131.0.6778.69)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [10410c78c92aabf286af2803a496b0f1, findElement {using\u003did, value\u003dlocationSelect}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59891/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 10410c78c92aabf286af2803a496b0f1\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy15.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:43)\r\n\tat com.revature.poms.HomePage.selectMoon(HomePage.java:93)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.the_User_selects_from_the_Dropdown(DeleteMoonsSteps.java:20)\r\n\tat ✽.the User selects Moon from the Dropdown(classpath:features/DeleteMoons.feature:5)\r\n",
+              "duration": 2234667300,
+              "status": "failed"
             },
             "line": 5,
             "name": "the User selects Moon from the Dropdown",
@@ -51,8 +52,8 @@
           },
           {
             "result": {
-              "duration": 935186700,
-              "status": "passed"
+              "duration": 2587200,
+              "status": "skipped"
             },
             "line": 6,
             "name": "inputs \"TesterMoon\"",
@@ -69,8 +70,8 @@
           },
           {
             "result": {
-              "duration": 266741200,
-              "status": "passed"
+              "duration": 1003700,
+              "status": "skipped"
             },
             "line": 7,
             "name": "clicks Delete Button",
@@ -81,9 +82,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c...lete moon with name [TesterMoon]\u003e but was:\u003c...lete moon with name []\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(DeleteMoonsSteps.java:54)\r\n\tat ✽.the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"(classpath:features/DeleteMoons.feature:8)\r\n",
-              "duration": 155600600,
-              "status": "failed"
+              "duration": 933200,
+              "status": "skipped"
             },
             "line": 8,
             "name": "the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"",
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 1999300,
+              "duration": 1000700,
               "status": "skipped"
             },
             "line": 9,
@@ -123,7 +123,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:44:35.828Z",
+        "start_timestamp": "2024-11-20T14:32:07.826Z",
         "line": 14,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -133,7 +133,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2435536000,
+              "duration": 7434218100,
               "status": "passed"
             },
             "line": 4,
@@ -159,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 1723911600,
+              "duration": 1129822600,
               "status": "passed"
             },
             "line": 5,
@@ -171,7 +171,7 @@
           },
           {
             "result": {
-              "duration": 1162897400,
+              "duration": 1846150000,
               "status": "passed"
             },
             "line": 6,
@@ -189,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 381102700,
+              "duration": 587972000,
               "status": "passed"
             },
             "line": 7,
@@ -201,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 2333941000,
+              "duration": 2271170800,
               "status": "passed"
             },
             "line": 8,
@@ -223,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 36581400,
+              "duration": 23172900,
               "status": "passed"
             },
             "line": 9,
@@ -242,7 +242,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:44:44.002Z",
+        "start_timestamp": "2024-11-20T14:32:21.243Z",
         "line": 18,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -253,7 +253,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Unexpectaed Failed login: Username [IamRobin] and Password [I am the night] not accepted\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:23)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"IamRobin\" and \"I am the night\"(classpath:features/DeleteMoons.feature:4)\r\n",
-              "duration": 1215489200,
+              "duration": 1478160500,
               "status": "failed"
             },
             "line": 4,
@@ -279,7 +279,6 @@
           },
           {
             "result": {
-              "duration": 1003000,
               "status": "skipped"
             },
             "line": 5,
@@ -291,7 +290,6 @@
           },
           {
             "result": {
-              "duration": 1001200,
               "status": "skipped"
             },
             "line": 6,
@@ -309,7 +307,7 @@
           },
           {
             "result": {
-              "duration": 5998600,
+              "duration": 6588500,
               "status": "skipped"
             },
             "line": 7,
@@ -321,7 +319,6 @@
           },
           {
             "result": {
-              "duration": 997500,
               "status": "skipped"
             },
             "line": 8,
@@ -343,7 +340,7 @@
           },
           {
             "result": {
-              "duration": 1021000,
+              "duration": 934500,
               "status": "skipped"
             },
             "line": 9,
@@ -362,7 +359,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:44:45.311Z",
+        "start_timestamp": "2024-11-20T14:32:22.850Z",
         "line": 19,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -372,7 +369,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1248255600,
+              "duration": 1542929700,
               "status": "passed"
             },
             "line": 4,
@@ -398,7 +395,7 @@
           },
           {
             "result": {
-              "duration": 397279800,
+              "duration": 1123478600,
               "status": "passed"
             },
             "line": 5,
@@ -410,7 +407,7 @@
           },
           {
             "result": {
-              "duration": 228005200,
+              "duration": 1072893100,
               "status": "passed"
             },
             "line": 6,
@@ -428,7 +425,7 @@
           },
           {
             "result": {
-              "duration": 626284200,
+              "duration": 1079408800,
               "status": "passed"
             },
             "line": 7,
@@ -440,7 +437,7 @@
           },
           {
             "result": {
-              "duration": 2141314100,
+              "duration": 2144715900,
               "status": "passed"
             },
             "line": 8,
@@ -462,7 +459,7 @@
           },
           {
             "result": {
-              "duration": 21988700,
+              "duration": 35738600,
               "status": "passed"
             },
             "line": 9,
@@ -492,7 +489,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:44:50.022Z",
+        "start_timestamp": "2024-11-20T14:32:29.925Z",
         "line": 17,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -502,7 +499,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1212422500,
+              "duration": 2419951000,
               "status": "passed"
             },
             "line": 6,
@@ -528,7 +525,7 @@
           },
           {
             "result": {
-              "duration": 511860600,
+              "duration": 1105829000,
               "status": "passed"
             },
             "line": 7,
@@ -540,7 +537,7 @@
           },
           {
             "result": {
-              "duration": 704116700,
+              "duration": 646029200,
               "status": "passed"
             },
             "line": 8,
@@ -558,7 +555,7 @@
           },
           {
             "result": {
-              "duration": 298740800,
+              "duration": 1108952000,
               "status": "passed"
             },
             "line": 9,
@@ -571,7 +568,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 51581000,
+              "duration": 101496800,
               "status": "failed"
             },
             "line": 10,
@@ -593,7 +590,6 @@
           },
           {
             "result": {
-              "duration": 999400,
               "status": "skipped"
             },
             "line": 11,
@@ -612,7 +608,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:44:52.887Z",
+        "start_timestamp": "2024-11-20T14:32:35.491Z",
         "line": 18,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -622,7 +618,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1143938300,
+              "duration": 2493027100,
               "status": "passed"
             },
             "line": 6,
@@ -648,7 +644,7 @@
           },
           {
             "result": {
-              "duration": 464369200,
+              "duration": 1123346400,
               "status": "passed"
             },
             "line": 7,
@@ -660,7 +656,7 @@
           },
           {
             "result": {
-              "duration": 213576200,
+              "duration": 525730600,
               "status": "passed"
             },
             "line": 8,
@@ -678,7 +674,7 @@
           },
           {
             "result": {
-              "duration": 465825600,
+              "duration": 521974800,
               "status": "passed"
             },
             "line": 9,
@@ -691,7 +687,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cFailed to delete [Planet with name Venus]\u003e but was:\u003cFailed to delete [planet with name ]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:69)\r\n\tat ✽.the User should see Delete Planet Result of \"Alert\" and \"Failed to delete Planet with name Venus\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 48659000,
+              "duration": 248237800,
               "status": "failed"
             },
             "line": 10,
@@ -713,7 +709,7 @@
           },
           {
             "result": {
-              "duration": 1000700,
+              "duration": 990300,
               "status": "skipped"
             },
             "line": 11,
@@ -732,7 +728,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:44:55.306Z",
+        "start_timestamp": "2024-11-20T14:32:40.470Z",
         "line": 23,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -742,7 +738,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1088143100,
+              "duration": 1640341300,
               "status": "passed"
             },
             "line": 6,
@@ -768,7 +764,7 @@
           },
           {
             "result": {
-              "duration": 526526400,
+              "duration": 626703300,
               "status": "passed"
             },
             "line": 7,
@@ -780,7 +776,7 @@
           },
           {
             "result": {
-              "duration": 299133200,
+              "duration": 403734400,
               "status": "passed"
             },
             "line": 8,
@@ -798,7 +794,7 @@
           },
           {
             "result": {
-              "duration": 596463500,
+              "duration": 808021800,
               "status": "passed"
             },
             "line": 9,
@@ -811,7 +807,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 45042600,
+              "duration": 55175100,
               "status": "failed"
             },
             "line": 10,
@@ -851,7 +847,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:44:57.912Z",
+        "start_timestamp": "2024-11-20T14:32:44.087Z",
         "line": 24,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -861,7 +857,7 @@
         "steps": [
           {
             "result": {
-              "duration": 978859700,
+              "duration": 1582494500,
               "status": "passed"
             },
             "line": 6,
@@ -887,7 +883,7 @@
           },
           {
             "result": {
-              "duration": 465870700,
+              "duration": 733902900,
               "status": "passed"
             },
             "line": 7,
@@ -899,7 +895,7 @@
           },
           {
             "result": {
-              "duration": 253734200,
+              "duration": 409137300,
               "status": "passed"
             },
             "line": 8,
@@ -917,7 +913,7 @@
           },
           {
             "result": {
-              "duration": 490731500,
+              "duration": 809750900,
               "status": "passed"
             },
             "line": 9,
@@ -930,7 +926,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cFailed to delete [Planet with name Mercury]\u003e but was:\u003cFailed to delete [planet with name ]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:69)\r\n\tat ✽.the User should see Delete Planet Result of \"Alert\" and \"Failed to delete Planet with name Mercury\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 53571700,
+              "duration": 60457800,
               "status": "failed"
             },
             "line": 10,
@@ -952,7 +948,7 @@
           },
           {
             "result": {
-              "duration": 1001500,
+              "duration": 1024300,
               "status": "skipped"
             },
             "line": 11,
@@ -971,7 +967,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:00.203Z",
+        "start_timestamp": "2024-11-20T14:32:47.760Z",
         "line": 29,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -981,7 +977,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1193435700,
+              "duration": 1269474700,
               "status": "passed"
             },
             "line": 6,
@@ -1007,7 +1003,7 @@
           },
           {
             "result": {
-              "duration": 517635300,
+              "duration": 573742600,
               "status": "passed"
             },
             "line": 7,
@@ -1019,7 +1015,7 @@
           },
           {
             "result": {
-              "duration": 439448900,
+              "duration": 363923800,
               "status": "passed"
             },
             "line": 8,
@@ -1037,7 +1033,7 @@
           },
           {
             "result": {
-              "duration": 383908500,
+              "duration": 534125500,
               "status": "passed"
             },
             "line": 9,
@@ -1050,7 +1046,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 40004900,
+              "duration": 289844800,
               "status": "failed"
             },
             "line": 10,
@@ -1072,6 +1068,7 @@
           },
           {
             "result": {
+              "duration": 993700,
               "status": "skipped"
             },
             "line": 11,
@@ -1090,7 +1087,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:02.815Z",
+        "start_timestamp": "2024-11-20T14:32:50.874Z",
         "line": 30,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -1100,7 +1097,7 @@
         "steps": [
           {
             "result": {
-              "duration": 905761200,
+              "duration": 1889980400,
               "status": "passed"
             },
             "line": 6,
@@ -1126,7 +1123,7 @@
           },
           {
             "result": {
-              "duration": 376335500,
+              "duration": 768468000,
               "status": "passed"
             },
             "line": 7,
@@ -1138,7 +1135,7 @@
           },
           {
             "result": {
-              "duration": 209659200,
+              "duration": 391327900,
               "status": "passed"
             },
             "line": 8,
@@ -1156,7 +1153,7 @@
           },
           {
             "result": {
-              "duration": 590502200,
+              "duration": 1072608700,
               "status": "passed"
             },
             "line": 9,
@@ -1168,7 +1165,7 @@
           },
           {
             "result": {
-              "duration": 2087867100,
+              "duration": 2183957300,
               "status": "passed"
             },
             "line": 10,
@@ -1190,7 +1187,7 @@
           },
           {
             "result": {
-              "duration": 14008800,
+              "duration": 21815700,
               "status": "passed"
             },
             "line": 11,
@@ -1220,7 +1217,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:45:07.019Z",
+        "start_timestamp": "2024-11-20T14:32:57.232Z",
         "line": 14,
         "name": "Login with Existing Account Test Case",
         "description": "\tValidating that Users can access the Home Page of the Planetarium given that they enter a Username that exists in the database and the correct password associated with their account.",
@@ -1230,7 +1227,7 @@
         "steps": [
           {
             "result": {
-              "duration": 99471500,
+              "duration": 103755100,
               "status": "passed"
             },
             "line": 5,
@@ -1248,7 +1245,7 @@
           },
           {
             "result": {
-              "duration": 259177300,
+              "duration": 389736700,
               "status": "passed"
             },
             "line": 6,
@@ -1266,7 +1263,7 @@
           },
           {
             "result": {
-              "duration": 335317300,
+              "duration": 584694200,
               "status": "passed"
             },
             "line": 7,
@@ -1284,7 +1281,7 @@
           },
           {
             "result": {
-              "duration": 178921000,
+              "duration": 384450900,
               "status": "passed"
             },
             "line": 8,
@@ -1296,7 +1293,7 @@
           },
           {
             "result": {
-              "duration": 31023300,
+              "duration": 82834000,
               "status": "passed"
             },
             "line": 9,
@@ -1318,7 +1315,7 @@
           },
           {
             "result": {
-              "duration": 23546500,
+              "duration": 33791400,
               "status": "passed"
             },
             "line": 10,
@@ -1337,7 +1334,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:07.974Z",
+        "start_timestamp": "2024-11-20T14:32:58.863Z",
         "line": 15,
         "name": "Login with Existing Account Test Case",
         "description": "\tValidating that Users can access the Home Page of the Planetarium given that they enter a Username that exists in the database and the correct password associated with their account.",
@@ -1347,7 +1344,7 @@
         "steps": [
           {
             "result": {
-              "duration": 72588300,
+              "duration": 305286200,
               "status": "passed"
             },
             "line": 5,
@@ -1365,7 +1362,7 @@
           },
           {
             "result": {
-              "duration": 297641100,
+              "duration": 483400700,
               "status": "passed"
             },
             "line": 6,
@@ -1383,7 +1380,7 @@
           },
           {
             "result": {
-              "duration": 402278600,
+              "duration": 544350100,
               "status": "passed"
             },
             "line": 7,
@@ -1401,7 +1398,7 @@
           },
           {
             "result": {
-              "duration": 239532000,
+              "duration": 271721900,
               "status": "passed"
             },
             "line": 8,
@@ -1413,7 +1410,7 @@
           },
           {
             "result": {
-              "duration": 2092172700,
+              "duration": 3071799400,
               "status": "passed"
             },
             "line": 9,
@@ -1435,7 +1432,7 @@
           },
           {
             "result": {
-              "duration": 19009000,
+              "duration": 161575700,
               "status": "passed"
             },
             "line": 10,
@@ -1465,7 +1462,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:45:11.127Z",
+        "start_timestamp": "2024-11-20T14:33:03.764Z",
         "line": 11,
         "name": "Logout with Existing Account Test Case",
         "description": "\tValidating that Users can use the Logout Button on the Home Page to logout and go back to the Login Page.",
@@ -1475,7 +1472,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1182662500,
+              "duration": 2565214800,
               "status": "passed"
             },
             "line": 5,
@@ -1501,7 +1498,7 @@
           },
           {
             "result": {
-              "duration": 755920400,
+              "duration": 1210992100,
               "status": "passed"
             },
             "line": 6,
@@ -1513,7 +1510,7 @@
           },
           {
             "result": {
-              "duration": 159612500,
+              "duration": 38085700,
               "status": "passed"
             },
             "line": 7,
@@ -1543,7 +1540,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:45:13.275Z",
+        "start_timestamp": "2024-11-20T14:33:07.630Z",
         "line": 12,
         "name": "Users should be redirected to the create account page from the login page",
         "description": "\tValidating the create account page is accessed properly from the login page",
@@ -1553,7 +1550,7 @@
         "steps": [
           {
             "result": {
-              "duration": 180176900,
+              "duration": 136258600,
               "status": "passed"
             },
             "line": 6,
@@ -1571,11 +1568,11 @@
           },
           {
             "result": {
-              "duration": 891651700,
+              "duration": 615549500,
               "status": "passed"
             },
             "line": 7,
-            "name": "the User click the Create Account button",
+            "name": "the User click the Create Account Link",
             "match": {
               "location": "com.revature.steps.redirect.RedirectSteps.the_user_clicks_the_create_account_button()"
             },
@@ -1583,7 +1580,7 @@
           },
           {
             "result": {
-              "duration": 35000900,
+              "duration": 27754300,
               "status": "passed"
             },
             "line": 8,
@@ -1613,7 +1610,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:45:14.576Z",
+        "start_timestamp": "2024-11-20T14:33:08.433Z",
         "line": 14,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1623,9 +1620,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 883557900,
-              "status": "failed"
+              "duration": 106637000,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -1642,46 +1638,69 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 208735800,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User inputs \"(no values)\"",
-            "match": {},
+            "name": "the User inputs Registration Username of \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 226491900,
+              "status": "passed"
             },
             "line": 7,
-            "name": "inputs \"(no value)\"",
+            "name": "inputs Registration Password of \"\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"(no value)\"",
-                  "offset": 7
+                  "val": "\"\"",
+                  "offset": 32
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 285610600,
+              "status": "passed"
             },
             "line": 8,
             "name": "clicks Create Account Button",
-            "match": {},
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully with username] \"\"\u003e but was:\u003cAccount creat[ion failed with username \"\" and password] \"\"\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 58541100,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should see an Alert saying \"User created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account created successfully with username \\\"\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
@@ -1689,22 +1708,22 @@
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"User redirected to login page\"",
+            "name": "The user should redirect to \"Planetarium Login\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"User redirected to login page\"",
-                  "offset": 7
+                  "val": "\"Planetarium Login\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:15.518Z",
+        "start_timestamp": "2024-11-20T14:33:09.360Z",
         "line": 15,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1714,9 +1733,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 11012200,
-              "status": "failed"
+              "duration": 95764300,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -1733,70 +1751,93 @@
           },
           {
             "result": {
-              "duration": 1003200,
-              "status": "skipped"
+              "duration": 184706000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User inputs \"(no values)\"",
-            "match": {},
+            "name": "the User inputs Registration Username of \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 363002800,
+              "status": "passed"
             },
             "line": 7,
-            "name": "inputs \"GordonIsMyHeroForeverGoodMan11\"",
+            "name": "inputs Registration Password of \"GordonIsMyHeroForeverGoodMan11\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"GordonIsMyHeroForeverGoodMan11\"",
-                  "offset": 7
+                  "offset": 32
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 323736200,
+              "status": "passed"
             },
             "line": 8,
             "name": "clicks Create Account Button",
-            "match": {},
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully with username \"]\"\u003e but was:\u003cAccount creat[ion failed with username \"\" and password \"GordonIsMyHeroForeverGoodMan11]\"\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 71403400,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should see an Alert saying \"User created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account created successfully with username \\\"\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
+              "duration": 988200,
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"User redirected to login page\"",
+            "name": "The user should redirect to \"Planetarium Login\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"User redirected to login page\"",
-                  "offset": 7
+                  "val": "\"Planetarium Login\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:15.575Z",
+        "start_timestamp": "2024-11-20T14:33:10.450Z",
         "line": 16,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1806,9 +1847,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 856806200,
-              "status": "failed"
+              "duration": 132250300,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -1825,48 +1865,69 @@
           },
           {
             "result": {
-              "duration": 1004900,
-              "status": "skipped"
+              "duration": 258476900,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User inputs \"(no values)\"",
-            "match": {},
+            "name": "the User inputs Registration Username of \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 491951700,
+              "status": "passed"
             },
             "line": 7,
-            "name": "inputs \"LexLuthorIsSchemingAgainOhNo!!!\"",
+            "name": "inputs Registration Password of \"LexLuthorIsSchemingAgainOhNo!!!\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"LexLuthorIsSchemingAgainOhNo!!!\"",
-                  "offset": 7
+                  "offset": 32
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 997300,
-              "status": "skipped"
+              "duration": 262306800,
+              "status": "passed"
             },
             "line": 8,
             "name": "clicks Create Account Button",
-            "match": {},
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...led with username \"\"[]\u003e but was:\u003c...led with username \"\"[ and password \"LexLuthorIsSchemingAgainOhNo!!!\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 51780300,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should see an Alert saying \"User not created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account creation failed with username \\\"\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
@@ -1874,22 +1935,22 @@
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"User remains on creation page\"",
+            "name": "The user should redirect to \"Account Creation\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"User remains on creation page\"",
-                  "offset": 7
+                  "val": "\"Account Creation\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:16.476Z",
+        "start_timestamp": "2024-11-20T14:33:11.683Z",
         "line": 17,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1899,9 +1960,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 16004700,
-              "status": "failed"
+              "duration": 116048300,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -1918,71 +1978,92 @@
           },
           {
             "result": {
-              "duration": 1001400,
-              "status": "skipped"
+              "duration": 437290100,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User inputs \"BatmanAndRobinToTheRescue20202\"",
-            "match": {},
+            "name": "the User inputs Registration Username of \"BatmanAndRobinToTheRescue20202\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BatmanAndRobinToTheRescue20202\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 169728500,
+              "status": "passed"
             },
             "line": 7,
-            "name": "inputs \"(no value)\"",
+            "name": "inputs Registration Password of \"\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"(no value)\"",
-                  "offset": 7
+                  "val": "\"\"",
+                  "offset": 32
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 222234100,
+              "status": "passed"
             },
             "line": 8,
             "name": "clicks Create Account Button",
-            "match": {},
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cAccount creat[ed successfully with username \"BatmanAndRobinToTheRescue20202]\"\u003e but was:\u003cAccount creat[ion failed with username \"BatmanAndRobinToTheRescue20202\" and password \"]\"\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"BatmanAndRobinToTheRescue20202\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 40917000,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should see an Alert saying \"User created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"BatmanAndRobinToTheRescue20202\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account created successfully with username \\\"BatmanAndRobinToTheRescue20202\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1019400,
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"User redirected to login page\"",
+            "name": "The user should redirect to \"Planetarium Login\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"User redirected to login page\"",
-                  "offset": 7
+                  "val": "\"Planetarium Login\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:16.548Z",
+        "start_timestamp": "2024-11-20T14:33:12.699Z",
         "line": 18,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1992,7 +2073,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1240161300,
+              "duration": 83836500,
               "status": "passed"
             },
             "line": 5,
@@ -2010,46 +2091,69 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 537925300,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User inputs \"BatmanAndRobinToTheRescue20202\"",
-            "match": {},
+            "name": "the User inputs Registration Username of \"BatmanAndRobinToTheRescue20202\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BatmanAndRobinToTheRescue20202\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 352691600,
+              "status": "passed"
             },
             "line": 7,
-            "name": "inputs \"GordonIsMyHeroForeverGoodMan11\"",
+            "name": "inputs Registration Password of \"GordonIsMyHeroForeverGoodMan11\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"GordonIsMyHeroForeverGoodMan11\"",
-                  "offset": 7
+                  "offset": 32
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 234772100,
+              "status": "passed"
             },
             "line": 8,
             "name": "clicks Create Account Button",
-            "match": {},
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...binToTheRescue20202\"[]\u003e but was:\u003c...binToTheRescue20202\"[ and password \"GordonIsMyHeroForeverGoodMan11\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"BatmanAndRobinToTheRescue20202\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 559833500,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should see an Alert saying \"User created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account created successfully with username \\\"BatmanAndRobinToTheRescue20202\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account created successfully with username \\\"BatmanAndRobinToTheRescue20202\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
@@ -2057,22 +2161,22 @@
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"User redirected to login page\"",
+            "name": "The user should redirect to \"Planetarium Login\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"User redirected to login page\"",
-                  "offset": 7
+                  "val": "\"Planetarium Login\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:17.829Z",
+        "start_timestamp": "2024-11-20T14:33:14.491Z",
         "line": 19,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2082,7 +2186,7 @@
         "steps": [
           {
             "result": {
-              "duration": 979725100,
+              "duration": 109029200,
               "status": "passed"
             },
             "line": 5,
@@ -2100,47 +2204,69 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 622909900,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User inputs \"BatmanAndRobinToTheRescue20202\"",
-            "match": {},
+            "name": "the User inputs Registration Username of \"BatmanAndRobinToTheRescue20202\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BatmanAndRobinToTheRescue20202\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 412161400,
+              "status": "passed"
             },
             "line": 7,
-            "name": "inputs \"LexLuthorIsSchemingAgainOhNo!!!\"",
+            "name": "inputs Registration Password of \"LexLuthorIsSchemingAgainOhNo!!!\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"LexLuthorIsSchemingAgainOhNo!!!\"",
-                  "offset": 7
+                  "offset": 32
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 287797600,
+              "status": "passed"
             },
             "line": 8,
             "name": "clicks Create Account Button",
-            "match": {},
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 999100,
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...binToTheRescue20202\"[]\u003e but was:\u003c...binToTheRescue20202\"[ and password \"LexLuthorIsSchemingAgainOhNo!!!\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"BatmanAndRobinToTheRescue20202\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 46910800,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should see an Alert saying \"User not created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"BatmanAndRobinToTheRescue20202\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account creation failed with username \\\"BatmanAndRobinToTheRescue20202\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
@@ -2148,22 +2274,22 @@
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"User remains on creation page\"",
+            "name": "The user should redirect to \"Account Creation\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"User remains on creation page\"",
-                  "offset": 7
+                  "val": "\"Account Creation\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:18.831Z",
+        "start_timestamp": "2024-11-20T14:33:16.006Z",
         "line": 20,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2173,191 +2299,7 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 921266300,
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "the User is on the \"http://localhost:8080/register\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"http://localhost:8080/register\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.revature.steps.shared.SharedSteps.the_User_is_on_the(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "the User inputs \"JokerAndRiddlerAreAtItAgain1010\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "inputs \"(no value)\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"(no value)\"",
-                  "offset": 7
-                }
-              ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "clicks Create Account Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "the User should see an Alert saying \"User not created\"",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "should \"User remains on creation page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"User remains on creation page\"",
-                  "offset": 7
-                }
-              ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-11-20T12:45:19.791Z",
-        "line": 21,
-        "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
-        "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
-        "id": "registrationcharacterlimit;user-registration-username/password-30-character-limit-requirement-test-case;;9",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 17002800,
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "the User is on the \"http://localhost:8080/register\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"http://localhost:8080/register\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.revature.steps.shared.SharedSteps.the_User_is_on_the(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "the User inputs \"JokerAndRiddlerAreAtItAgain1010\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "inputs \"GordonIsMyHeroForeverGoodMan11\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"GordonIsMyHeroForeverGoodMan11\"",
-                  "offset": 7
-                }
-              ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000500,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "clicks Create Account Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "the User should see an Alert saying \"User not created\"",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 998100,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "should \"User remains on creation page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"User remains on creation page\"",
-                  "offset": 7
-                }
-              ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-11-20T12:45:19.846Z",
-        "line": 22,
-        "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
-        "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
-        "id": "registrationcharacterlimit;user-registration-username/password-30-character-limit-requirement-test-case;;10",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1059465300,
+              "duration": 122117300,
               "status": "passed"
             },
             "line": 5,
@@ -2375,46 +2317,183 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 461962000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "the User inputs \"JokerAndRiddlerAreAtItAgain1010\"",
-            "match": {},
+            "name": "the User inputs Registration Username of \"JokerAndRiddlerAreAtItAgain1010\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JokerAndRiddlerAreAtItAgain1010\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 227497800,
+              "status": "passed"
             },
             "line": 7,
-            "name": "inputs \"LexLuthorIsSchemingAgainOhNo!!!\"",
+            "name": "inputs Registration Password of \"\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"LexLuthorIsSchemingAgainOhNo!!!\"",
-                  "offset": 7
+                  "val": "\"\"",
+                  "offset": 32
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.inputs(java.lang.String)"
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 327387600,
+              "status": "passed"
             },
             "line": 8,
             "name": "clicks Create Account Button",
-            "match": {},
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...lerAreAtItAgain1010\"[]\u003e but was:\u003c...lerAreAtItAgain1010\"[ and password \"\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 46920500,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the User should see an Alert saying \"User not created\"",
-            "match": {},
+            "name": "the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998600,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user should redirect to \"Account Creation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Creation\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-20T14:33:17.223Z",
+        "line": 21,
+        "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
+        "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
+        "id": "registrationcharacterlimit;user-registration-username/password-30-character-limit-requirement-test-case;;9",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 126080300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the User is on the \"http://localhost:8080/register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/register\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.steps.shared.SharedSteps.the_User_is_on_the(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 675086100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the User inputs Registration Username of \"JokerAndRiddlerAreAtItAgain1010\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JokerAndRiddlerAreAtItAgain1010\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 496310200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "inputs Registration Password of \"GordonIsMyHeroForeverGoodMan11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GordonIsMyHeroForeverGoodMan11\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 320814100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks Create Account Button",
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...lerAreAtItAgain1010\"[]\u003e but was:\u003c...lerAreAtItAgain1010\"[ and password \"GordonIsMyHeroForeverGoodMan11\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 62782200,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
             "keyword": "Then "
           },
           {
@@ -2422,15 +2501,128 @@
               "status": "skipped"
             },
             "line": 10,
-            "name": "should \"User remains on creation page\"",
+            "name": "The user should redirect to \"Account Creation\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"User remains on creation page\"",
-                  "offset": 7
+                  "val": "\"Account Creation\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.moons.DeleteMoonsSteps.should(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-20T14:33:18.944Z",
+        "line": 22,
+        "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
+        "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
+        "id": "registrationcharacterlimit;user-registration-username/password-30-character-limit-requirement-test-case;;10",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 120313200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the User is on the \"http://localhost:8080/register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/register\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.steps.shared.SharedSteps.the_User_is_on_the(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 515363600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the User inputs Registration Username of \"JokerAndRiddlerAreAtItAgain1010\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JokerAndRiddlerAreAtItAgain1010\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserInputsRegistrationUsernameOf(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 405713400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "inputs Registration Password of \"LexLuthorIsSchemingAgainOhNo!!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LexLuthorIsSchemingAgainOhNo!!!\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.inputsRegistrationPasswordOf(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229227500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks Create Account Button",
+            "match": {
+              "location": "com.revature.steps.registration.RegistrationSteps.clicksCreateAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...lerAreAtItAgain1010\"[]\u003e but was:\u003c...lerAreAtItAgain1010\"[ and password \"LexLuthorIsSchemingAgainOhNo!!!\"]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(RegistrationSteps.java:84)\r\n\tat ✽.the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"(classpath:features/RegistrationCharacterLimit.feature:9)\r\n",
+              "duration": 35219800,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "the User should see an Create Account Result Alert saying \"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account creation failed with username \\\"JokerAndRiddlerAreAtItAgain1010\\\"\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.revature.steps.registration.RegistrationSteps.theUserShouldSeeAnCreateAccountResultAlertSaying(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user should redirect to \"Account Creation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Creation\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "And "
           }
@@ -2448,7 +2640,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:45:20.939Z",
+        "start_timestamp": "2024-11-20T14:33:20.391Z",
         "line": 14,
         "name": "Automated User Registration Unique Username Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a valid password and a unique username, and if the username is not unique their account should not be created",
@@ -2458,7 +2650,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1096981100,
+              "duration": 80184400,
               "status": "passed"
             },
             "line": 5,
@@ -2494,7 +2686,6 @@
           },
           {
             "result": {
-              "duration": 998100,
               "status": "skipped"
             },
             "line": 8,
@@ -2513,7 +2704,6 @@
           },
           {
             "result": {
-              "duration": 1002600,
               "status": "skipped"
             },
             "line": 10,
@@ -2532,7 +2722,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:22.071Z",
+        "start_timestamp": "2024-11-20T14:33:20.526Z",
         "line": 15,
         "name": "Automated User Registration Unique Username Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a valid password and a unique username, and if the username is not unique their account should not be created",
@@ -2542,9 +2732,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"Not attached to an active page\"}\n  (Session info: chrome\u003d131.0.6778.69)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationUniqueUsername.feature:5)\r\n",
-              "duration": 15993400,
-              "status": "failed"
+              "duration": 102324400,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -2561,7 +2750,7 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
             "line": 6,
             "name": "the User enters unique Batman",
@@ -2570,7 +2759,7 @@
           },
           {
             "result": {
-              "duration": 1001100,
+              "duration": 996600,
               "status": "skipped"
             },
             "line": 7,
@@ -2589,7 +2778,6 @@
           },
           {
             "result": {
-              "duration": 1000500,
               "status": "skipped"
             },
             "line": 9,
@@ -2628,7 +2816,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:45:22.113Z",
+        "start_timestamp": "2024-11-20T14:33:20.659Z",
         "line": 9,
         "name": "Automated View Moons Test Case",
         "description": "",
@@ -2638,9 +2826,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"Not attached to an active page\"}\n  (Session info: chrome\u003d131.0.6778.69)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:20)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"(classpath:features/ViewMoons.feature:4)\r\n",
-              "duration": 15021200,
-              "status": "failed"
+              "duration": 1145423600,
+              "status": "passed"
             },
             "line": 4,
             "name": "the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"",
@@ -2665,7 +2852,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[2] Moons\u003e but was:\u003c[0] Moons\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.the_User_should_see(ViewMoonsSteps.java:31)\r\n\tat ✽.the User should see \"2 Moons\"(classpath:features/ViewMoons.feature:5)\r\n",
+              "duration": 4187602900,
+              "status": "failed"
             },
             "line": 5,
             "name": "the User should see \"2 Moons\"",
@@ -2683,7 +2872,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:45:22.158Z",
+        "start_timestamp": "2024-11-20T14:33:26.013Z",
         "line": 10,
         "name": "Automated View Moons Test Case",
         "description": "",
@@ -2693,8 +2882,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"Not attached to an active page\"}\n  (Session info: chrome\u003d131.0.6778.69)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:20)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Robin\" and \"BatmanAndRobinToTheRescue20202\"(classpath:features/ViewMoons.feature:4)\r\n",
-              "duration": 29004600,
+              "error_message": "java.lang.AssertionError: Unexpectaed Failed login: Username [Robin] and Password [BatmanAndRobinToTheRescue20202] not accepted\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:23)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Robin\" and \"BatmanAndRobinToTheRescue20202\"(classpath:features/ViewMoons.feature:4)\r\n",
+              "duration": 1110404400,
               "status": "failed"
             },
             "line": 4,

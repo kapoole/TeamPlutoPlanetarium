@@ -4,7 +4,7 @@ Feature: AccountRedirect
 	Validating the create account page is accessed properly from the login page
 
 		Given The user is on the login page at url "<Login Page>"
-		When the User click the Create Account button
+		When the User click the Create Account Link
 		Then The user should redirect to "<Redirect Result>"
 
 	Examples: 
