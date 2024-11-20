@@ -30,34 +30,6 @@ public class DeleteMoonsSteps {
         TestRunner.homePage.clickDeleteButton();
     }
 
-    @Then("the User should see an Alert saying {string}")
-    public void the_User_should_see_an_Alert_saying(String message) {
-
-        TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
-        Alert alert = TestRunner.driver.switchTo().alert();
-        String alertMessage = alert.getText();
-
-        System.out.print("[");
-        System.out.print(alertMessage);
-        System.out.println("]");
-
-        try{
-            if(message.equals("Moon Created")){
-                Assert.assertEquals("Filler to be deleted, no alert for positive case", alertMessage);
-            } else if (message.equals("Moon Not Created")) {
-                Assert.assertEquals("Failed to delete moon with name ", alertMessage);
-            } else{
-                Assert.fail("Incorrect alert message produced: actual message: " + alertMessage );
-            }
-        } finally{
-            alert.accept();
-            // here we tell the driver to wait up to 2 seconds for the alert to be gone before continuing
-            TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
-        }
-
-
-    }
-
     @And("should {string}")
     public void should(String redirectionResult) {
         if(redirectionResult.equals("User stays on Home Page")){

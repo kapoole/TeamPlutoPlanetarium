@@ -11,12 +11,12 @@ Feature: DeleteMoons
         Examples:
             | url                                 | username | password         | moonName     | deleteMoonResult        | expectedMessage                              | redirectionResult         |
             | "http://localhost:8080/planetarium" | "Batman" | "I am the night" | "TesterMoon" | "Alert"                 | "Failed to delete moon with name TesterMoon" | "User stays on Home Page" |
-            | "http://localhost:8080/planetarium" | "Batman" | "I am the night" | "Luna"       | "Moon Deleted"          | "M/A"                                        | "User stays on Home Page"            |
+            | "http://localhost:8080/planetarium" | "Batman" | "I am the night" | "Luna"       | "Moon Deleted"          | "Luna"                                       | "User stays on Home Page"            |
 
         Examples:
             | url                                 | username | password            | moonName     | deleteMoonResult        | expectedMessage                              | redirectionResult         |
             | "http://localhost:8080/planetarium" | "IamRobin" | "I am the night"  | "Titan"      | "Alert"                 | "Failed to delete moon with name TesterMoon" | "User stays on Home Page" |
-            | "http://localhost:8080/planetarium" | "Batman"  | "I am the night"   | "Titan"      | "Moon Deleted"          | "N/A"                                        | "User stays on Home Page" |
+            | "http://localhost:8080/planetarium" | "Batman"  | "I am the night"   | "Titan"      | "Moon Deleted"          | "Titan"                                      | "User stays on Home Page" |
 
 
 

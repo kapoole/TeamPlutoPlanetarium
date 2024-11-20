@@ -13,7 +13,6 @@ public class HomePage {
 
     private WebDriver driver;
 
-
     @FindBy(id = "planetNameInput")
     private WebElement planetNameInput;
     // Locator for Logout Button
@@ -61,13 +60,8 @@ public class HomePage {
     }
     public void enterPlanetName(String PlanetName) { planetNameInput.sendKeys(PlanetName); }
 
-    public void clickSubmitButton(){
+    public void clickSubmitButton() {
         addPlanetSubmitButton.click();
-    }
-
-    public void selectPlanet() {
-        Select select = new Select(locationSelect);
-        select.selectByValue("Planet");
     }
 
     // Method to click the Logout button
@@ -76,6 +70,8 @@ public class HomePage {
     }
   
     public void enterMoonNameToBeDeleted(String moonName) { deleteInput.sendKeys(moonName); }
+
+    public void enterPlanetNameToBeDeleted(String planetName) { deleteInput.sendKeys(planetName); }
 
     public void enterMoonNameToBeAdded(String moonName ) { addMoonNameInput.sendKeys(moonName); }
 
@@ -97,6 +93,11 @@ public class HomePage {
         select.selectByValue("moon");
     }
 
+    public void selectPlanet() {
+        Select select = new Select(locationSelect);
+        select.selectByValue("planet");
+    }
+
     public boolean isMoonVisible(String moonName) {
 
         boolean isFound = false;
@@ -105,6 +106,12 @@ public class HomePage {
 
         return isFound;
 
+    }
+
+    public boolean isPlanetVisible(String planetName) {
+        boolean isFound = false;
+
+        return isFound;
     }
 
 

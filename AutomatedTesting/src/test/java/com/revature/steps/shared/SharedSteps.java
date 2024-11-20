@@ -1,6 +1,8 @@
 package com.revature.steps.shared;
 
 import com.revature.TestRunner;
+import com.revature.utility.Setup;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,6 +11,11 @@ import org.junit.Assert;
 import java.sql.SQLException;
 
 public class SharedSteps {
+
+//    @Before
+//    public void resetDatabase() {
+//        Setup.main(new String[]{});
+//    }
 
 
     // Starting step for login page (unchanged)
