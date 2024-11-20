@@ -1,10 +1,13 @@
 package com.revature.steps.DeletePlanet;
 
 import com.revature.TestRunner;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class DeletePlanet {
@@ -40,6 +43,55 @@ public class DeletePlanet {
         }
 
     }
+
+    @When("the User selects Planet from the Dropdown")
+    public void theUserSelectsPlanetFromTheDropdown() {
+        TestRunner.homePage.selectPlanet();
+    }
+
+    @And("inputs Planet Name {string}")
+    public void inputsPlanetNamePlanetName(String planetName) {
+        TestRunner.homePage.enterPlanetNameToBeDeleted(planetName);
+    }
+
+    @Then("the User should see Delete Planet Result of {string} and {string}")
+    public void theUserShouldSeeDeletePlanetResultAndExpectedMessage(String deletePlanetResult, String expectedMessage) {
+        try {
+            TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = TestRunner.driver.switchTo().alert();
+            String alertMessage = alert.getText();
+
+            alert.accept();
+
+            if (deletePlanetResult.equals("Planet Deleted")) {
+                Assert.fail("Alert but no Alert was expected");
+            }  else if (deletePlanetResult.equals("Alert")) {
+                Assert.assertEquals(expectedMessage, alertMessage);
+            } else {
+                Assert.fail("Alert failure");
+            }
+
+        } catch (TimeoutException te) {
+            if (deletePlanetResult.equals("Planet Deleted")) {
+                Boolean isPlanetVisible = TestRunner.homePage.isPlanetVisible(expectedMessage);
+                Assert.assertEquals(false, isPlanetVisible);
+            } else if (deletePlanetResult.equals("Alert")) {
+                Assert.fail("No Alert but Alert was expected");
+            } else{
+                Assert.fail("No Alert failure");
+            }
+        }
+    }
+
+    @And("should Delete Planet Redirect of {string}")
+    public void shouldDeletePlanetRedirectOfDeletePlanetRedirect(String deletePlanetRedirect) {
+        if(deletePlanetRedirect.equals("User stays on Home Page")){
+            Assert.assertEquals("Home", TestRunner.driver.getTitle());
+        } else {
+            Assert.assertEquals("Home", TestRunner.driver.getTitle());
+        }
+    }
+
 
 //    @Then("the User should  {string}")
 //    public void the_User_should_stay_in_homepage(String url) {

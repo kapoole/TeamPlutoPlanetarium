@@ -1,10 +1,12 @@
 package com.revature.steps.login;
 
 import com.revature.TestRunner;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginSteps {
@@ -14,37 +16,43 @@ public class LoginSteps {
         TestRunner.loginPage.enterUsername(username);
     }
 
-    @When("The user enters the login password {string}")
+    @And("The user enters the login password {string}")
     public void the_user_enters_the_login_password(String password) {
         TestRunner.loginPage.enterPassword(password);
     }
 
-    @When("The user clicks the login button")
+    @And("The user clicks the login button")
     public void the_user_clicks_the_login_button() {
         TestRunner.loginPage.clickLoginButton();
     }
 
-    @Then("An alert should appear saying {string}")
-    public void an_alert_should_appear_saying(String message) {
-        // Wait for alert and switch to it
-        TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
-        Alert alert = TestRunner.driver.switchTo().alert();
-        String alertMessage = alert.getText();
 
-        // Validate the alert message
+    @Then("The user should see Login Result {string} and {string}")
+    public void theUserShouldSeeLoginResultAnd(String loginResult, String expectedMessage) {
         try {
-            if (message.equals("Login successful")) {
-                Assert.assertEquals("Login successful", alertMessage);
-            } else if (message.equals("Invalid username or password")) {
-                Assert.assertEquals("Invalid username or password", alertMessage);
-            } else {
-                Assert.fail("Unexpected alert message: " + alertMessage);
-            }
-        } finally {
+            TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = TestRunner.driver.switchTo().alert();
+            String alertMessage = alert.getText();
+
             alert.accept();
-            TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
+
+            if (loginResult.equals("Login Success")) {
+                Assert.fail("Alert but no Alert was expected");
+            }  else if (loginResult.equals("Login Failed")) {
+                Assert.assertEquals(expectedMessage, alertMessage);
+            } else {
+                Assert.fail("Alert failure");
+            }
+
+        } catch (TimeoutException te) {
+            if (loginResult.equals("Login Success")) {
+                // Nothing should happen here, inconsequential validate
+                Assert.assertEquals(expectedMessage, "N/A");
+            } else if (loginResult.equals("Login Failed")) {
+                Assert.fail("No Alert but Alert was expected");
+            } else{
+                Assert.fail("No Alert failure");
+            }
         }
     }
-
-
 }

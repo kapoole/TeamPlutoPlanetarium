@@ -13,11 +13,11 @@ public class HomePage {
 
     private WebDriver driver;
 
-
     @FindBy(id = "planetNameInput")
     private WebElement planetNameInput;
+
     // Locator for Logout Button
-    @FindBy(id = "logout-button") // Make sure to use the correct locator here
+    @FindBy(id = "logoutButton") // Make sure to use the correct locator here
     private WebElement logoutButton;
 
     @FindBy(id = "locationSelect")
@@ -50,6 +50,9 @@ public class HomePage {
 
     @FindBy(xpath = "//table[@id='celestialTable']//td[contains(text(), 'moon')]")
     private List<WebElement> moons;
+
+    @FindBy(xpath = "//table[@id='celestialTable']//td[contains(text(), 'planet')]")
+    private List<WebElement> planets;
   
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -61,13 +64,8 @@ public class HomePage {
     }
     public void enterPlanetName(String PlanetName) { planetNameInput.sendKeys(PlanetName); }
 
-    public void clickSubmitButton(){
+    public void clickSubmitButton() {
         addPlanetSubmitButton.click();
-    }
-
-    public void selectPlanet() {
-        Select select = new Select(locationSelect);
-        select.selectByValue("Planet");
     }
 
     // Method to click the Logout button
@@ -76,6 +74,8 @@ public class HomePage {
     }
   
     public void enterMoonNameToBeDeleted(String moonName) { deleteInput.sendKeys(moonName); }
+
+    public void enterPlanetNameToBeDeleted(String planetName) { deleteInput.sendKeys(planetName); }
 
     public void enterMoonNameToBeAdded(String moonName ) { addMoonNameInput.sendKeys(moonName); }
 
@@ -88,13 +88,21 @@ public class HomePage {
     public void clickDeleteButton() { deleteButton.click(); }
 
     public int moonsCount() {
-        System.out.println(moons.toString());
         return moons.size();
+    }
+
+    public int visiblePlanetsCount() {
+        return planets.size();
     }
 
     public void selectMoon() {
         Select select = new Select(locationSelect);
         select.selectByValue("moon");
+    }
+
+    public void selectPlanet() {
+        Select select = new Select(locationSelect);
+        select.selectByValue("planet");
     }
 
     public boolean isMoonVisible(String moonName) {
@@ -105,6 +113,12 @@ public class HomePage {
 
         return isFound;
 
+    }
+
+    public boolean isPlanetVisible(String planetName) {
+        boolean isFound = false;
+
+        return isFound;
     }
 
 

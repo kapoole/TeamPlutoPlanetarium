@@ -3,15 +3,28 @@ Feature: DeletePlanet
     Scenario Outline: Automated Delete Planet Test Case
     Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.
 
-        Given the User is on the "<HomePage>"
-        When the User enter unique "<PlanetName>"
+        Given the User is logged in and on the <url> as <username> and <password>
+        When the User selects Planet from the Dropdown
+        And inputs Planet Name <PlanetName>
         And clicks Delete Button
-        Then the User should see delete planet alert "<DeletePlanetResult>"
-        And the User should stay in homepage "<DeletePlanetRedirect>"
+        Then the User should see Delete Planet Result of <DeletePlanetResult> and <ExpectedMessage>
+        And should Delete Planet Redirect of <DeletePlanetRedirect>
 
-    Examples:
-        | HomePage     | PlanetName   | DeletePlanetResult                          | DeletePlanetRedirect                    |
-        | http://localhost:8080/planetarium   | Mars          | "Planet deleted successfully."               | http://localhost:8080/planetarium |
-        | http://localhost:8080/planetarium   | Venus         | "Error: You do not have permission to delete this planet." | http://localhost:8080/planetarium           |
-        | http://localhost:8080/planetarium  | Jupiter       | "Planet deleted successfully."              | http://localhost:8080/planetarium |
-        | http://localhost:8080/planetarium   | Saturn | "Planet deleted successfully." | http://localhost:8080/planetarium |
+
+        # Planet Exists
+        Examples:
+            | url                                   | username | password         | PlanetName      | DeletePlanetResult  | ExpectedMessage                             | DeletePlanetRedirect      |
+            | "http://localhost:8080/planetarium"   | "Batman" | "I am the night" | "Jupiter"       | "Planet Deleted"    | "Mars"                                      | "User stays on Home Page" |
+            | "http://localhost:8080/planetarium"   | "Batman" | "I am the night" | "Venus"         | "Alert"             | "Failed to delete Planet with name Venus"   | "User stays on Home Page" |
+
+        # Planet Owned by User
+        Examples:
+            | url                                   | username | password         | PlanetName      | DeletePlanetResult  | ExpectedMessage                             | DeletePlanetRedirect      |
+            | "http://localhost:8080/planetarium"   | "Batman" | "I am the night" | "Jupiter"       | "Planet Deleted"    | "Mars"                                      | "User stays on Home Page" |
+            | "http://localhost:8080/planetarium"   | "Batman" | "I am the night" | "Mercury"       | "Alert"             | "Failed to delete Planet with name Mercury" | "User stays on Home Page" |
+
+        # Planet Has Moons
+        Examples:
+            | url                                   | username | password         | PlanetName      | DeletePlanetResult  | ExpectedMessage                             | DeletePlanetRedirect      |
+            | "http://localhost:8080/planetarium"   | "Batman" | "I am the night" | "Jupiter"       | "Planet Deleted"    | "Mars"                                      | "User stays on Home Page" |
+            | "http://localhost:8080/planetarium"   | "Batman" | "I am the night" | "Mars"          | "Planet Deleted"    | "Mars"                                      | "User stays on Home Page" |

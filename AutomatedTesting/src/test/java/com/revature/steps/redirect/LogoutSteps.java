@@ -12,7 +12,7 @@ public class LogoutSteps {
     @When("The user clicks the Logout Button")
     public void the_user_clicks_the_logout_button() {
         // Click the logout button, assuming the button has a specific id (you might need to adjust this locator)
-        TestRunner.driver.findElement(By.id("logout-button")).click();
+        TestRunner.homePage.clickLogoutButton();
     }
 
 }

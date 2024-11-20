@@ -8,7 +8,7 @@ import org.junit.Assert;
 public class RedirectSteps {
 
     // Step to click the Create Account button from the Login Page
-    @When("the User click the Create Account button")
+    @When("the User click the Create Account Link")
     public void the_user_clicks_the_create_account_button() {
         // Click the registration button
         TestRunner.loginPage.clickRegistrationButton();

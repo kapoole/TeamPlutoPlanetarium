@@ -1,12 +1,22 @@
 package com.revature.steps.shared;
 
 import com.revature.TestRunner;
+import com.revature.utility.Setup;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.sql.SQLException;
+
 public class SharedSteps {
+
+//    @Before
+//    public void resetDatabase() {
+//        Setup.main(new String[]{});
+//    }
+
 
     // Starting step for login page (unchanged)
     @Given("The user is on the login page at url {string}")
@@ -22,8 +32,6 @@ public class SharedSteps {
 
     @Given("the User is on the {string}")
     public void the_User_is_on_the(String url) {
-        // Write code here that turns the phrase above into concrete actions
-        TestRunner.loginPage.login("IamRobin", "Iwillsavetheworld");
         TestRunner.driver.get(url);
     }
 

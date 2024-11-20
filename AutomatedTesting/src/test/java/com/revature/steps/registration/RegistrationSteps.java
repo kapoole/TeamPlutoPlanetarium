@@ -1,6 +1,7 @@
 package com.revature.steps.registration;
 
 import com.revature.TestRunner;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -54,6 +55,37 @@ public class RegistrationSteps {
             Assert.assertEquals("Planetarium Login", TestRunner.driver.getTitle());
         } else {
             Assert.assertEquals("Account Creation", TestRunner.driver.getTitle());
+        }
+    }
+
+    @When("the User inputs Registration Username of {string}")
+    public void theUserInputsRegistrationUsernameOf(String username) {
+        TestRunner.registrationPage.enterUsername(username);
+    }
+
+    @And("inputs Registration Password of {string}")
+    public void inputsRegistrationPasswordOf(String password) {
+        TestRunner.registrationPage.enterPassword(password);
+    }
+
+    @And("clicks Create Account Button")
+    public void clicksCreateAccountButton() {
+        TestRunner.registrationPage.clickRegisterButton();
+    }
+
+    @Then("the User should see an Create Account Result Alert saying {string}")
+    public void theUserShouldSeeAnCreateAccountResultAlertSaying(String expectedMessage) {
+        // here we tell the driver to wait up to 2 seconds for the alert before continuing
+        TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
+        Alert alert = TestRunner.driver.switchTo().alert();
+        String alertMessage = alert.getText();
+        // if one of these assert statements fails then the methods execution stops, so we need to make sure the alert is closed
+        try{
+            Assert.assertEquals(expectedMessage, alertMessage);
+        } finally{
+            alert.accept();
+            // here we tell the driver to wait up to 2 seconds for the alert to be gone before continuing
+            TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
         }
     }
 }
