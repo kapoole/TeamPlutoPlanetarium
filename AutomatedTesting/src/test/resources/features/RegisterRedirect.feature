@@ -2,10 +2,11 @@ Feature: AccountRedirect
 
 	Scenario Outline: Users should be redirected to the create account page from the login page
 	Validating the create account page is accessed properly from the login page
-		Given the User is on the "<Login Page>"
+
+		Given The user is on the login page at url "<Login Page>"
 		When the User click the Create Account button
-		Then the User should redirect to registration page "<Create Account Page>"
+		Then The user should redirect to "<Redirect Result>"
 
 	Examples: 
-		| Login Page      		 | Create Account		 		  |
-		| http://localhost:8080/ | http://localhost:8080/register |
+		| Login Page      		 | Redirect Result	 |
+		| http://localhost:8080/ | Account Creation  |

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:38:22.951Z",
+        "start_timestamp": "2024-11-20T12:44:28.412Z",
         "line": 13,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2071165700,
+              "duration": 4241580600,
               "status": "passed"
             },
             "line": 4,
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 1338519200,
+              "duration": 1086030500,
               "status": "passed"
             },
             "line": 5,
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 1026503900,
+              "duration": 935186700,
               "status": "passed"
             },
             "line": 6,
@@ -69,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 252519400,
+              "duration": 266741200,
               "status": "passed"
             },
             "line": 7,
@@ -82,7 +82,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003c...lete moon with name [TesterMoon]\u003e but was:\u003c...lete moon with name []\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.DeleteMoonsSteps.theUserShouldSeeAnd(DeleteMoonsSteps.java:54)\r\n\tat ✽.the User should see \"Alert\" and \"Failed to delete moon with name TesterMoon\"(classpath:features/DeleteMoons.feature:8)\r\n",
-              "duration": 112591100,
+              "duration": 155600600,
               "status": "failed"
             },
             "line": 8,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 998600,
+              "duration": 1999300,
               "status": "skipped"
             },
             "line": 9,
@@ -123,7 +123,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:28.322Z",
+        "start_timestamp": "2024-11-20T12:44:35.828Z",
         "line": 14,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -133,7 +133,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1495699400,
+              "duration": 2435536000,
               "status": "passed"
             },
             "line": 4,
@@ -159,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 912534800,
+              "duration": 1723911600,
               "status": "passed"
             },
             "line": 5,
@@ -171,7 +171,7 @@
           },
           {
             "result": {
-              "duration": 331257100,
+              "duration": 1162897400,
               "status": "passed"
             },
             "line": 6,
@@ -189,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 539792900,
+              "duration": 381102700,
               "status": "passed"
             },
             "line": 7,
@@ -201,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 2146183300,
+              "duration": 2333941000,
               "status": "passed"
             },
             "line": 8,
@@ -223,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 19001000,
+              "duration": 36581400,
               "status": "passed"
             },
             "line": 9,
@@ -242,7 +242,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:33.845Z",
+        "start_timestamp": "2024-11-20T12:44:44.002Z",
         "line": 18,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -253,7 +253,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Unexpectaed Failed login: Username [IamRobin] and Password [I am the night] not accepted\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:23)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"IamRobin\" and \"I am the night\"(classpath:features/DeleteMoons.feature:4)\r\n",
-              "duration": 770119900,
+              "duration": 1215489200,
               "status": "failed"
             },
             "line": 4,
@@ -279,6 +279,7 @@
           },
           {
             "result": {
+              "duration": 1003000,
               "status": "skipped"
             },
             "line": 5,
@@ -290,7 +291,7 @@
           },
           {
             "result": {
-              "duration": 1001800,
+              "duration": 1001200,
               "status": "skipped"
             },
             "line": 6,
@@ -308,7 +309,7 @@
           },
           {
             "result": {
-              "duration": 6001300,
+              "duration": 5998600,
               "status": "skipped"
             },
             "line": 7,
@@ -320,6 +321,7 @@
           },
           {
             "result": {
+              "duration": 997500,
               "status": "skipped"
             },
             "line": 8,
@@ -341,6 +343,7 @@
           },
           {
             "result": {
+              "duration": 1021000,
               "status": "skipped"
             },
             "line": 9,
@@ -359,7 +362,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:34.679Z",
+        "start_timestamp": "2024-11-20T12:44:45.311Z",
         "line": 19,
         "name": "Automated Delete Moon Test Case",
         "description": "",
@@ -369,9 +372,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Unexpectaed Failed login: Username [Batman] and Password [I am the night] not accepted\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:23)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"(classpath:features/DeleteMoons.feature:4)\r\n",
-              "duration": 14989400,
-              "status": "failed"
+              "duration": 1248255600,
+              "status": "passed"
             },
             "line": 4,
             "name": "the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"",
@@ -396,7 +398,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 397279800,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User selects Moon from the Dropdown",
@@ -407,8 +410,8 @@
           },
           {
             "result": {
-              "duration": 1005800,
-              "status": "skipped"
+              "duration": 228005200,
+              "status": "passed"
             },
             "line": 6,
             "name": "inputs \"Titan\"",
@@ -425,7 +428,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 626284200,
+              "status": "passed"
             },
             "line": 7,
             "name": "clicks Delete Button",
@@ -436,7 +440,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2141314100,
+              "status": "passed"
             },
             "line": 8,
             "name": "the User should see \"Moon Deleted\" and \"Titan\"",
@@ -457,7 +462,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 21988700,
+              "status": "passed"
             },
             "line": 9,
             "name": "should \"User stays on Home Page\"",
@@ -486,7 +492,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:38:34.740Z",
+        "start_timestamp": "2024-11-20T12:44:50.022Z",
         "line": 17,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -496,7 +502,7 @@
         "steps": [
           {
             "result": {
-              "duration": 967403400,
+              "duration": 1212422500,
               "status": "passed"
             },
             "line": 6,
@@ -522,7 +528,7 @@
           },
           {
             "result": {
-              "duration": 440503700,
+              "duration": 511860600,
               "status": "passed"
             },
             "line": 7,
@@ -534,7 +540,7 @@
           },
           {
             "result": {
-              "duration": 714945500,
+              "duration": 704116700,
               "status": "passed"
             },
             "line": 8,
@@ -552,7 +558,7 @@
           },
           {
             "result": {
-              "duration": 228294800,
+              "duration": 298740800,
               "status": "passed"
             },
             "line": 9,
@@ -565,7 +571,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 566139300,
+              "duration": 51581000,
               "status": "failed"
             },
             "line": 10,
@@ -587,7 +593,7 @@
           },
           {
             "result": {
-              "duration": 990900,
+              "duration": 999400,
               "status": "skipped"
             },
             "line": 11,
@@ -606,7 +612,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:37.740Z",
+        "start_timestamp": "2024-11-20T12:44:52.887Z",
         "line": 18,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -616,7 +622,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1203339400,
+              "duration": 1143938300,
               "status": "passed"
             },
             "line": 6,
@@ -642,7 +648,7 @@
           },
           {
             "result": {
-              "duration": 479964400,
+              "duration": 464369200,
               "status": "passed"
             },
             "line": 7,
@@ -654,7 +660,7 @@
           },
           {
             "result": {
-              "duration": 231215700,
+              "duration": 213576200,
               "status": "passed"
             },
             "line": 8,
@@ -672,7 +678,7 @@
           },
           {
             "result": {
-              "duration": 446157000,
+              "duration": 465825600,
               "status": "passed"
             },
             "line": 9,
@@ -685,7 +691,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cFailed to delete [Planet with name Venus]\u003e but was:\u003cFailed to delete [planet with name ]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:69)\r\n\tat ✽.the User should see Delete Planet Result of \"Alert\" and \"Failed to delete Planet with name Venus\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 42568900,
+              "duration": 48659000,
               "status": "failed"
             },
             "line": 10,
@@ -707,6 +713,7 @@
           },
           {
             "result": {
+              "duration": 1000700,
               "status": "skipped"
             },
             "line": 11,
@@ -725,7 +732,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:40.190Z",
+        "start_timestamp": "2024-11-20T12:44:55.306Z",
         "line": 23,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -735,7 +742,7 @@
         "steps": [
           {
             "result": {
-              "duration": 987037400,
+              "duration": 1088143100,
               "status": "passed"
             },
             "line": 6,
@@ -761,7 +768,7 @@
           },
           {
             "result": {
-              "duration": 523037000,
+              "duration": 526526400,
               "status": "passed"
             },
             "line": 7,
@@ -773,7 +780,7 @@
           },
           {
             "result": {
-              "duration": 724428300,
+              "duration": 299133200,
               "status": "passed"
             },
             "line": 8,
@@ -791,7 +798,7 @@
           },
           {
             "result": {
-              "duration": 212192600,
+              "duration": 596463500,
               "status": "passed"
             },
             "line": 9,
@@ -804,7 +811,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 544658900,
+              "duration": 45042600,
               "status": "failed"
             },
             "line": 10,
@@ -844,7 +851,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:43.215Z",
+        "start_timestamp": "2024-11-20T12:44:57.912Z",
         "line": 24,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -854,7 +861,7 @@
         "steps": [
           {
             "result": {
-              "duration": 810476800,
+              "duration": 978859700,
               "status": "passed"
             },
             "line": 6,
@@ -880,7 +887,7 @@
           },
           {
             "result": {
-              "duration": 405315800,
+              "duration": 465870700,
               "status": "passed"
             },
             "line": 7,
@@ -892,7 +899,7 @@
           },
           {
             "result": {
-              "duration": 346140500,
+              "duration": 253734200,
               "status": "passed"
             },
             "line": 8,
@@ -910,7 +917,7 @@
           },
           {
             "result": {
-              "duration": 281452300,
+              "duration": 490731500,
               "status": "passed"
             },
             "line": 9,
@@ -923,7 +930,7 @@
           {
             "result": {
               "error_message": "org.junit.ComparisonFailure: expected:\u003cFailed to delete [Planet with name Mercury]\u003e but was:\u003cFailed to delete [planet with name ]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:69)\r\n\tat ✽.the User should see Delete Planet Result of \"Alert\" and \"Failed to delete Planet with name Mercury\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 43002600,
+              "duration": 53571700,
               "status": "failed"
             },
             "line": 10,
@@ -945,7 +952,7 @@
           },
           {
             "result": {
-              "duration": 999600,
+              "duration": 1001500,
               "status": "skipped"
             },
             "line": 11,
@@ -964,7 +971,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:45.145Z",
+        "start_timestamp": "2024-11-20T12:45:00.203Z",
         "line": 29,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -974,7 +981,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1039597800,
+              "duration": 1193435700,
               "status": "passed"
             },
             "line": 6,
@@ -1000,7 +1007,7 @@
           },
           {
             "result": {
-              "duration": 558296800,
+              "duration": 517635300,
               "status": "passed"
             },
             "line": 7,
@@ -1012,7 +1019,7 @@
           },
           {
             "result": {
-              "duration": 256133500,
+              "duration": 439448900,
               "status": "passed"
             },
             "line": 8,
@@ -1030,7 +1037,7 @@
           },
           {
             "result": {
-              "duration": 594554000,
+              "duration": 383908500,
               "status": "passed"
             },
             "line": 9,
@@ -1043,7 +1050,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 30985000,
+              "duration": 40004900,
               "status": "failed"
             },
             "line": 10,
@@ -1065,7 +1072,6 @@
           },
           {
             "result": {
-              "duration": 1013200,
               "status": "skipped"
             },
             "line": 11,
@@ -1084,7 +1090,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:47.660Z",
+        "start_timestamp": "2024-11-20T12:45:02.815Z",
         "line": 30,
         "name": "Automated Delete Planet Test Case",
         "description": "    Validating that Planets can be deleted by users if they own the Planet no matter if the Planets have any orbiting Moons or not. User should be able to remove Planet with the orbiting Moon associated with the Planet.",
@@ -1094,7 +1100,7 @@
         "steps": [
           {
             "result": {
-              "duration": 977479600,
+              "duration": 905761200,
               "status": "passed"
             },
             "line": 6,
@@ -1120,7 +1126,7 @@
           },
           {
             "result": {
-              "duration": 513435800,
+              "duration": 376335500,
               "status": "passed"
             },
             "line": 7,
@@ -1132,7 +1138,7 @@
           },
           {
             "result": {
-              "duration": 389358900,
+              "duration": 209659200,
               "status": "passed"
             },
             "line": 8,
@@ -1150,7 +1156,7 @@
           },
           {
             "result": {
-              "duration": 498852600,
+              "duration": 590502200,
               "status": "passed"
             },
             "line": 9,
@@ -1162,9 +1168,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Alert but no Alert was expected\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.DeletePlanet.DeletePlanet.theUserShouldSeeDeletePlanetResultAndExpectedMessage(DeletePlanet.java:67)\r\n\tat ✽.the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"(classpath:features/DeletePlanet.feature:10)\r\n",
-              "duration": 39557000,
-              "status": "failed"
+              "duration": 2087867100,
+              "status": "passed"
             },
             "line": 10,
             "name": "the User should see Delete Planet Result of \"Planet Deleted\" and \"Mars\"",
@@ -1185,7 +1190,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 14008800,
+              "status": "passed"
             },
             "line": 11,
             "name": "should Delete Planet Redirect of \"User stays on Home Page\"",
@@ -1214,7 +1220,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:38:50.152Z",
+        "start_timestamp": "2024-11-20T12:45:07.019Z",
         "line": 14,
         "name": "Login with Existing Account Test Case",
         "description": "\tValidating that Users can access the Home Page of the Planetarium given that they enter a Username that exists in the database and the correct password associated with their account.",
@@ -1224,7 +1230,7 @@
         "steps": [
           {
             "result": {
-              "duration": 296736200,
+              "duration": 99471500,
               "status": "passed"
             },
             "line": 5,
@@ -1242,7 +1248,7 @@
           },
           {
             "result": {
-              "duration": 463127400,
+              "duration": 259177300,
               "status": "passed"
             },
             "line": 6,
@@ -1260,7 +1266,7 @@
           },
           {
             "result": {
-              "duration": 549202000,
+              "duration": 335317300,
               "status": "passed"
             },
             "line": 7,
@@ -1278,7 +1284,7 @@
           },
           {
             "result": {
-              "duration": 250701300,
+              "duration": 178921000,
               "status": "passed"
             },
             "line": 8,
@@ -1290,7 +1296,7 @@
           },
           {
             "result": {
-              "duration": 37552200,
+              "duration": 31023300,
               "status": "passed"
             },
             "line": 9,
@@ -1312,7 +1318,7 @@
           },
           {
             "result": {
-              "duration": 20002000,
+              "duration": 23546500,
               "status": "passed"
             },
             "line": 10,
@@ -1331,7 +1337,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:38:51.802Z",
+        "start_timestamp": "2024-11-20T12:45:07.974Z",
         "line": 15,
         "name": "Login with Existing Account Test Case",
         "description": "\tValidating that Users can access the Home Page of the Planetarium given that they enter a Username that exists in the database and the correct password associated with their account.",
@@ -1341,7 +1347,7 @@
         "steps": [
           {
             "result": {
-              "duration": 64572700,
+              "duration": 72588300,
               "status": "passed"
             },
             "line": 5,
@@ -1359,7 +1365,7 @@
           },
           {
             "result": {
-              "duration": 289286500,
+              "duration": 297641100,
               "status": "passed"
             },
             "line": 6,
@@ -1377,7 +1383,7 @@
           },
           {
             "result": {
-              "duration": 328840000,
+              "duration": 402278600,
               "status": "passed"
             },
             "line": 7,
@@ -1395,7 +1401,7 @@
           },
           {
             "result": {
-              "duration": 220036800,
+              "duration": 239532000,
               "status": "passed"
             },
             "line": 8,
@@ -1407,7 +1413,7 @@
           },
           {
             "result": {
-              "duration": 2118095100,
+              "duration": 2092172700,
               "status": "passed"
             },
             "line": 9,
@@ -1429,7 +1435,7 @@
           },
           {
             "result": {
-              "duration": 21013200,
+              "duration": 19009000,
               "status": "passed"
             },
             "line": 10,
@@ -1459,7 +1465,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:38:54.872Z",
+        "start_timestamp": "2024-11-20T12:45:11.127Z",
         "line": 11,
         "name": "Logout with Existing Account Test Case",
         "description": "\tValidating that Users can use the Logout Button on the Home Page to logout and go back to the Login Page.",
@@ -1469,7 +1475,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1676338800,
+              "duration": 1182662500,
               "status": "passed"
             },
             "line": 5,
@@ -1495,7 +1501,7 @@
           },
           {
             "result": {
-              "duration": 737688100,
+              "duration": 755920400,
               "status": "passed"
             },
             "line": 6,
@@ -1507,7 +1513,7 @@
           },
           {
             "result": {
-              "duration": 134582800,
+              "duration": 159612500,
               "status": "passed"
             },
             "line": 7,
@@ -1537,8 +1543,8 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:38:57.466Z",
-        "line": 11,
+        "start_timestamp": "2024-11-20T12:45:13.275Z",
+        "line": 12,
         "name": "Users should be redirected to the create account page from the login page",
         "description": "\tValidating the create account page is accessed properly from the login page",
         "id": "accountredirect;users-should-be-redirected-to-the-create-account-page-from-the-login-page;;2",
@@ -1547,28 +1553,28 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/\"(classpath:features/RegisterRedirect.feature:5)\r\n",
-              "duration": 1370962200,
-              "status": "failed"
+              "duration": 180176900,
+              "status": "passed"
             },
-            "line": 5,
-            "name": "the User is on the \"http://localhost:8080/\"",
+            "line": 6,
+            "name": "The user is on the login page at url \"http://localhost:8080/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"http://localhost:8080/\"",
-                  "offset": 19
+                  "offset": 37
                 }
               ],
-              "location": "com.revature.steps.shared.SharedSteps.the_User_is_on_the(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_is_on_the_login_page_at_url(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 891651700,
+              "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "the User click the Create Account button",
             "match": {
               "location": "com.revature.steps.redirect.RedirectSteps.the_user_clicks_the_create_account_button()"
@@ -1577,18 +1583,19 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 35000900,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "the User should redirect to registration page \"\u003cCreate Account Page\u003e\"",
+            "line": 8,
+            "name": "The user should redirect to \"Account Creation\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"\u003cCreate Account Page\u003e\"",
-                  "offset": 46
+                  "val": "\"Account Creation\"",
+                  "offset": 28
                 }
               ],
-              "location": "com.revature.steps.redirect.RedirectSteps.the_user_should_redirect_to_registration_page(java.lang.String)"
+              "location": "com.revature.steps.shared.SharedSteps.the_user_should_redirect_to(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -1606,7 +1613,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:38:59.026Z",
+        "start_timestamp": "2024-11-20T12:45:14.576Z",
         "line": 14,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1616,8 +1623,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 996157500,
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
+              "duration": 883557900,
               "status": "failed"
             },
             "line": 5,
@@ -1644,7 +1651,6 @@
           },
           {
             "result": {
-              "duration": 998700,
               "status": "skipped"
             },
             "line": 7,
@@ -1662,7 +1668,6 @@
           },
           {
             "result": {
-              "duration": 1002700,
               "status": "skipped"
             },
             "line": 8,
@@ -1699,7 +1704,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:00.119Z",
+        "start_timestamp": "2024-11-20T12:45:15.518Z",
         "line": 15,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1709,8 +1714,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 19001500,
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
+              "duration": 11012200,
               "status": "failed"
             },
             "line": 5,
@@ -1728,6 +1733,7 @@
           },
           {
             "result": {
+              "duration": 1003200,
               "status": "skipped"
             },
             "line": 6,
@@ -1737,7 +1743,6 @@
           },
           {
             "result": {
-              "duration": 1000800,
               "status": "skipped"
             },
             "line": 7,
@@ -1755,7 +1760,6 @@
           },
           {
             "result": {
-              "duration": 1006800,
               "status": "skipped"
             },
             "line": 8,
@@ -1792,7 +1796,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:00.226Z",
+        "start_timestamp": "2024-11-20T12:45:15.575Z",
         "line": 16,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1802,8 +1806,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 1117334200,
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
+              "duration": 856806200,
               "status": "failed"
             },
             "line": 5,
@@ -1821,7 +1825,7 @@
           },
           {
             "result": {
-              "duration": 1000900,
+              "duration": 1004900,
               "status": "skipped"
             },
             "line": 6,
@@ -1848,6 +1852,7 @@
           },
           {
             "result": {
+              "duration": 997300,
               "status": "skipped"
             },
             "line": 8,
@@ -1884,7 +1889,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:01.407Z",
+        "start_timestamp": "2024-11-20T12:45:16.476Z",
         "line": 17,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1894,8 +1899,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 26002500,
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
+              "duration": 16004700,
               "status": "failed"
             },
             "line": 5,
@@ -1913,6 +1918,7 @@
           },
           {
             "result": {
+              "duration": 1001400,
               "status": "skipped"
             },
             "line": 6,
@@ -1957,6 +1963,7 @@
           },
           {
             "result": {
+              "duration": 1019400,
               "status": "skipped"
             },
             "line": 10,
@@ -1975,7 +1982,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:01.514Z",
+        "start_timestamp": "2024-11-20T12:45:16.548Z",
         "line": 18,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -1985,9 +1992,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 4113324400,
-              "status": "failed"
+              "duration": 1240161300,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -2004,8 +2010,7 @@
           },
           {
             "result": {
-              "duration": 1003100,
-              "status": "skipped"
+              "status": "undefined"
             },
             "line": 6,
             "name": "the User inputs \"BatmanAndRobinToTheRescue20202\"",
@@ -2014,7 +2019,6 @@
           },
           {
             "result": {
-              "duration": 1003000,
               "status": "skipped"
             },
             "line": 7,
@@ -2050,7 +2054,6 @@
           },
           {
             "result": {
-              "duration": 996600,
               "status": "skipped"
             },
             "line": 10,
@@ -2069,7 +2072,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:05.721Z",
+        "start_timestamp": "2024-11-20T12:45:17.829Z",
         "line": 19,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2079,9 +2082,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 2169773200,
-              "status": "failed"
+              "duration": 979725100,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -2098,7 +2100,7 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
             "line": 6,
             "name": "the User inputs \"BatmanAndRobinToTheRescue20202\"",
@@ -2107,7 +2109,6 @@
           },
           {
             "result": {
-              "duration": 1002700,
               "status": "skipped"
             },
             "line": 7,
@@ -2134,7 +2135,7 @@
           },
           {
             "result": {
-              "duration": 998500,
+              "duration": 999100,
               "status": "skipped"
             },
             "line": 9,
@@ -2162,7 +2163,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:07.940Z",
+        "start_timestamp": "2024-11-20T12:45:18.831Z",
         "line": 20,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2172,8 +2173,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 1586489400,
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
+              "duration": 921266300,
               "status": "failed"
             },
             "line": 5,
@@ -2217,7 +2218,6 @@
           },
           {
             "result": {
-              "duration": 996800,
               "status": "skipped"
             },
             "line": 8,
@@ -2254,7 +2254,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:09.582Z",
+        "start_timestamp": "2024-11-20T12:45:19.791Z",
         "line": 21,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2264,8 +2264,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 1499934000,
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
+              "duration": 17002800,
               "status": "failed"
             },
             "line": 5,
@@ -2292,7 +2292,6 @@
           },
           {
             "result": {
-              "duration": 1000100,
               "status": "skipped"
             },
             "line": 7,
@@ -2310,6 +2309,7 @@
           },
           {
             "result": {
+              "duration": 1000500,
               "status": "skipped"
             },
             "line": 8,
@@ -2328,7 +2328,7 @@
           },
           {
             "result": {
-              "duration": 999500,
+              "duration": 998100,
               "status": "skipped"
             },
             "line": 10,
@@ -2347,7 +2347,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:11.143Z",
+        "start_timestamp": "2024-11-20T12:45:19.846Z",
         "line": 22,
         "name": "User Registration Username/Password 30 character Limit Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a username and password that meet the character limit requirement, and if they don\u0027t their account should not be created",
@@ -2357,9 +2357,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationCharacterLimit.feature:5)\r\n",
-              "duration": 28008600,
-              "status": "failed"
+              "duration": 1059465300,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -2376,7 +2375,7 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
             "line": 6,
             "name": "the User inputs \"JokerAndRiddlerAreAtItAgain1010\"",
@@ -2385,7 +2384,6 @@
           },
           {
             "result": {
-              "duration": 1999100,
               "status": "skipped"
             },
             "line": 7,
@@ -2421,7 +2419,6 @@
           },
           {
             "result": {
-              "duration": 1000700,
               "status": "skipped"
             },
             "line": 10,
@@ -2451,7 +2448,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:39:11.221Z",
+        "start_timestamp": "2024-11-20T12:45:20.939Z",
         "line": 14,
         "name": "Automated User Registration Unique Username Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a valid password and a unique username, and if the username is not unique their account should not be created",
@@ -2461,9 +2458,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/register}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:37)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationUniqueUsername.feature:5)\r\n",
-              "duration": 1633738900,
-              "status": "failed"
+              "duration": 1096981100,
+              "status": "passed"
             },
             "line": 5,
             "name": "the User is on the \"http://localhost:8080/register\"",
@@ -2480,7 +2476,7 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
             "line": 6,
             "name": "the User enters unique Robin",
@@ -2498,6 +2494,7 @@
           },
           {
             "result": {
+              "duration": 998100,
               "status": "skipped"
             },
             "line": 8,
@@ -2516,6 +2513,7 @@
           },
           {
             "result": {
+              "duration": 1002600,
               "status": "skipped"
             },
             "line": 10,
@@ -2534,7 +2532,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:12.902Z",
+        "start_timestamp": "2024-11-20T12:45:22.071Z",
         "line": 15,
         "name": "Automated User Registration Unique Username Requirement Test Case",
         "description": "\tValidating Users can open a new User account with the Planetarium when they provide a valid password and a unique username, and if the username is not unique their account should not be created",
@@ -2544,8 +2542,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d131.0.6778.69): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4056c51a71aecebadd38951a32bb785d, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54209/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4056c51a71aecebadd38951a32bb785d\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationUniqueUsername.feature:5)\r\n",
-              "duration": 14003400,
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"Not attached to an active page\"}\n  (Session info: chrome\u003d131.0.6778.69)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.shared.SharedSteps.the_User_is_on_the(SharedSteps.java:36)\r\n\tat ✽.the User is on the \"http://localhost:8080/register\"(classpath:features/RegistrationUniqueUsername.feature:5)\r\n",
+              "duration": 15993400,
               "status": "failed"
             },
             "line": 5,
@@ -2572,7 +2570,7 @@
           },
           {
             "result": {
-              "duration": 1010600,
+              "duration": 1001100,
               "status": "skipped"
             },
             "line": 7,
@@ -2591,6 +2589,7 @@
           },
           {
             "result": {
+              "duration": 1000500,
               "status": "skipped"
             },
             "line": 9,
@@ -2629,7 +2628,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-20T12:39:12.960Z",
+        "start_timestamp": "2024-11-20T12:45:22.113Z",
         "line": 9,
         "name": "Automated View Moons Test Case",
         "description": "",
@@ -2639,8 +2638,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1329991900,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"Not attached to an active page\"}\n  (Session info: chrome\u003d131.0.6778.69)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:20)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"(classpath:features/ViewMoons.feature:4)\r\n",
+              "duration": 15021200,
+              "status": "failed"
             },
             "line": 4,
             "name": "the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Batman\" and \"I am the night\"",
@@ -2665,9 +2665,7 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[2] Moons\u003e but was:\u003c[1] Moons\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.the_User_should_see(ViewMoonsSteps.java:31)\r\n\tat ✽.the User should see \"2 Moons\"(classpath:features/ViewMoons.feature:5)\r\n",
-              "duration": 325746900,
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "the User should see \"2 Moons\"",
@@ -2685,7 +2683,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-11-20T12:39:14.647Z",
+        "start_timestamp": "2024-11-20T12:45:22.158Z",
         "line": 10,
         "name": "Automated View Moons Test Case",
         "description": "",
@@ -2695,8 +2693,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Unexpectaed Failed login: Username [Robin] and Password [BatmanAndRobinToTheRescue20202] not accepted\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:23)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Robin\" and \"BatmanAndRobinToTheRescue20202\"(classpath:features/ViewMoons.feature:4)\r\n",
-              "duration": 1227044500,
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"Not attached to an active page\"}\n  (Session info: chrome\u003d131.0.6778.69)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.12\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5bade9764e1f4fa9ea4800832581628f, get {url\u003dhttp://localhost:8080/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\\Users\\KENAN_~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54556/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 5bade9764e1f4fa9ea4800832581628f\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.poms.LoginPage.login(LoginPage.java:59)\r\n\tat com.revature.steps.moons.ViewMoonsSteps.theUserIsLoggedInAndOnTheAsAnd(ViewMoonsSteps.java:20)\r\n\tat ✽.the User is logged in and on the \"http://localhost:8080/planetarium\" as \"Robin\" and \"BatmanAndRobinToTheRescue20202\"(classpath:features/ViewMoons.feature:4)\r\n",
+              "duration": 29004600,
               "status": "failed"
             },
             "line": 4,
