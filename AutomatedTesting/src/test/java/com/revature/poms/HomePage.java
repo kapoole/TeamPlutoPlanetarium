@@ -50,6 +50,9 @@ public class HomePage {
 
     @FindBy(xpath = "//table[@id='celestialTable']//td[contains(text(), 'moon')]")
     private List<WebElement> moons;
+
+    @FindBy(xpath = "//table[@id='celestialTable']//td[contains(text(), 'planet')]")
+    private List<WebElement> planets;
   
     public HomePage(WebDriver driver){
         this.driver = driver;
@@ -85,8 +88,11 @@ public class HomePage {
     public void clickDeleteButton() { deleteButton.click(); }
 
     public int moonsCount() {
-        System.out.println(moons.toString());
         return moons.size();
+    }
+
+    public int visiblePlanetsCount() {
+        return planets.size();
     }
 
     public void selectMoon() {
